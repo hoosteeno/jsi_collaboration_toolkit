@@ -3,7 +3,7 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
 ## Steps
 
   1. On GitHub, create new private dojo4 repo
-  2. On local machine, make then enter directory for the repo
+  2. On local machine, make (mkdir) then enter (cd _dirname_) directory for the repo
   3. Run "git clone git@github.com:dojo4/static_site.git ."
     * this will clone the 'static_site' in local directory
   4. Run "rm -rf .git"
