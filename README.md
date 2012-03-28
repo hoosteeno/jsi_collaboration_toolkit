@@ -1,4 +1,4 @@
-# The files herein can serve as a dandy point of departure for a new Middleman site.
+_The files herein can serve as a dandy point of departure for a new Middleman site_
 
 ## Steps
 
