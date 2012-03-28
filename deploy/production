@@ -1,0 +1,3 @@
+#! /bin/sh
+
+middleman build && rsync -avz ./ dojo4@p0.dojo4.com:/ebs/sites/
