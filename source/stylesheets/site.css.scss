@@ -1,4 +1,5 @@
-@import "compass";
+// @import "bootstrap.css";
+@import "bootstrap-responsive.css";
 
 $link-color:         #0388a6;
 $link-hover-color:   #009ce0;
@@ -11,12 +12,6 @@ $font-family: sans-serif;
 $base-font-size:   12px;
 $base-line-height: 18px;
 
-$total-cols: 12;
-$col-width: 4em;
-$gutter-width: 1em;
-$side-gutter-width: $gutter-width;
-
-@include global-reset;
 
 body {
   font-family: $font-family;
@@ -24,9 +19,5 @@ body {
 }
 
 a {
-  @include link-colors($link-color, $link-hover-color, $link-focus-color, $link-active-color, $link-visited-color);
-}
-
-#main {
-  padding: 50px;
+  color: $link-color;
 }

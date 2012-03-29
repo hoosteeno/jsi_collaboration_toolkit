@@ -1,9 +1,6 @@
-<% content_for :title do %>
-  The Middleman!
-<% end%>
 
       <div class="container-fluid">
         <div class="row-fluid">
-          <p>foo</p>
+          <p>&copy; <%= Time.now.strftime("%Y") %> <%= data.site.title %></p>
         </div>
       </div>
