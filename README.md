@@ -11,7 +11,7 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
       <code><pre>
         [remote "origin"] 
           fetch = +refs/heads/*:refs/remotes/origin/*
-          url = git@github.com:dojo4/static_site.git
+          url = git@github.com:dojo4/<i>newproject</i>.git
       </pre></code>
     * <code>git push -u origin master</code>
   6. Consider updating _README.md_ file
