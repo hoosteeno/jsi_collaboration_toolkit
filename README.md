@@ -15,6 +15,5 @@
       </code></pre>
     * Push this to the _newproject_ repo
       <code>git push -u origin master</code>
-  6. Consider updating _README.md_ file
-
-_Note_: The paths in the /deploy files should be changed to match the true deploy path
+  3. Update paths in the /deploy files to match the true deploy path
+  4. Consider updating _README.md_ file
