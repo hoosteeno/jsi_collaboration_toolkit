@@ -8,11 +8,11 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
     * <code>cd _newproject_</code>
     * <code>vim .git/config</code> (to edit git config)
     * change [remote "origin"] "url" path from <i>static_site</i> to <i>newproject</i>
-      <code>
+      <code><pre>
         [remote "origin"] 
           fetch = +refs/heads/*:refs/remotes/origin/*
           url = git@github.com:dojo4/static_site.git
-      </code>
+      </pre></code>
     * <code>git push -u origin master</code>
   6. Consider updating _README.md_ file
 
