@@ -8,8 +8,7 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
     * <code>cd _newproject_</code>
     * <code>vim .git/config</code> (to edit git config)
     * change [remote "origin"] "url" path from <i>static&#95;site</i> to <i>newproject</i>
-      <pre><code>
-        [remote "origin"] 
+      <pre><code>[remote "origin"] 
           fetch = +refs/heads/&#42;:refs/remotes/origin/&#42;
           url = git@github.com:dojo4/<i>newproject</i>.git
       </code></pre>
