@@ -8,7 +8,7 @@
       <code>cd _newproject_</code>
     * Edit git config
       <code>vim .git/config</code>
-    * Change _static&#95;site_ to _newproject_ in the code below
+    * Change _static&#95;site_ to _newproject_ in the code below, then save
       <pre><code>[remote "origin"] 
           fetch = +refs/heads/&#42;:refs/remotes/origin/&#42;
           url = git@github.com:dojo4/<del>static&#95;site</del><ins>newproject</ins>.git
