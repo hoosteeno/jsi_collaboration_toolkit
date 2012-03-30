@@ -55,13 +55,11 @@
 # Methods defined in the helpers block are available in templates
 helpers do
   def custom_or_default_content(thingy)
-   result =
-        if content_for?(thingy)
-          yield_content(thingy)
-        else
-          data.site.send(thingy) || ''
-        end
-    return result
+      if content_for?(thingy)
+        yield_content(thingy)
+      else
+        data.site.send(thingy) || ''
+      end
   end
 end
 
