@@ -19,3 +19,5 @@
       <code>$ git remote add upstream git&#64;github.com:dojo4/static_site.git</code> 
   3. Update paths in the /deploy files to match the true deploy path
   4. Consider updating _README.md_ file
+
+_Reference_: http://bitdrift.com/post/4534738938/fork-your-own-project-on-github
