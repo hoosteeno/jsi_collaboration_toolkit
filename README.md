@@ -9,10 +9,10 @@
     * Edit git config
       <code>vim .git/config</code>
       * Change _static&#95;site_ to _newproject_ in the code below, then save
-        <pre><code>[remote "origin"] 
-            fetch = +refs/heads/&#42;:refs/remotes/origin/&#42;
-            url = git&#64;github.com:dojo4/<del>static&#95;site</del><ins>newproject</ins>.git
-        </code></pre>
+          <pre><code>[remote "origin"] 
+              fetch = +refs/heads/&#42;:refs/remotes/origin/&#42;
+              url = git&#64;github.com:dojo4/<del>static&#95;site</del><ins>newproject</ins>.git
+          </code></pre>
     * Push this to the _newproject_ repo
       <code>git push -u origin master</code>
   3. Update paths in the /deploy files to match the true deploy path
