@@ -4,7 +4,7 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
 
   1. On GitHub, create new private dojo4 repo: _newproject_
   2. On local machine:
-    * <code>git clone git@github.com:dojo4/static_site.git _newproject_</code> (this will clone the 'static_site' in new directory called _newproject_)
+    * <code><pre>git clone git@github.com:dojo4/static_site.git _newproject_</pre></code> (this will clone 'static_site' into a new directory called 'newproject')
     * <code>cd _newproject_</code>
     * <code>vim .git/config</code> (to edit git config)
     * change [remote "origin"] "url" path from <i>static_site</i> to <i>newproject</i>
