@@ -10,7 +10,7 @@ _The files herein can serve as a dandy point of departure for a new Middleman si
     * change [remote "origin"] "url" path from <i>static&#95;site</i> to <i>newproject</i>
       <code><pre>
         [remote "origin"] 
-          fetch = +refs/heads/*:refs/remotes/origin/*
+          fetch = +refs/heads/&#42;:refs/remotes/origin/&#42;
           url = git@github.com:dojo4/<i>newproject</i>.git
       </pre></code>
     * <code>git push -u origin master</code>
