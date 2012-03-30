@@ -16,7 +16,11 @@
     * Push this to the _newproject_ repo
       <code>$ git push -u origin master</code>
     * Optionally, create remote to pull in upstream changes
-      <code>$ git remote add upstream git&#64;github.com:dojo4/static_site.git</code> 
+      <code>$ git remote add upstream git&#64;github.com:dojo4/static_site.git</code>
+      * Optionally merge changes from upstream
+        <pre><code>$ git fetch upstream
+        $ git merge upstream/master
+        </code></pre>
   3. Update paths in the /deploy files to match the true deploy path
   4. Consider updating _README.md_ file
 
