@@ -2,23 +2,8 @@
 @import "bootstrap-responsive.css";
 @import "existing.css";
 
-$link-color:         #0388a6;
-$link-hover-color:   #009ce0;
-$link-focus-color:   false;
-$link-active-color:  false;
-$link-visited-color: false;
-
-$font-color:  #2a2a2a;
-$font-family: sans-serif;
-$base-font-size:   12px;
-$base-line-height: 18px;
+// Variables
 
 
-body {
-  font-family: $font-family;
-  color: $font-color; 
-}
+// Rules
 
-a {
-  color: $link-color;
-}
