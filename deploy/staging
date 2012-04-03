@@ -1,3 +1,3 @@
 #! /bin/sh
 
-middleman build && rsync -avz ./ dojo4@d0.dojo4.com:/ebs/sites/
+middleman build && rsync -avz ./ dojo4@d0.dojo4.com:/ebs/sites/collaborationtoolkit
