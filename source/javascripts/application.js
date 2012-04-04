@@ -18,11 +18,13 @@ jQuery(function(){
     }
 
     // select first child tabs of the last tab specified in nodes
-    children = jq('#'+nodes[nodes.length-1]).find('.tabs');
-    children.each(function() {
-      first_tab = jq(this).find('.tab').first();
-      jq(tabbish).tabs('select', first_tab.attr('id'));
-    });
+    if (nodes[nodes.length-1] > 0) {
+      children = jq('#'+nodes[nodes.length-1]).find('.tabs');
+      children.each(function() {
+        first_tab = jq(this).find('.tab').first();
+        jq(tabbish).tabs('select', first_tab.attr('id'));
+      });
+    }
 
   };
 
@@ -42,6 +44,7 @@ jQuery(function(){
   jq(window).hashchange(function(){
     go_to_deep_link();
   });
+
 });
 
 
