@@ -6,19 +6,20 @@ jQuery(function(){
   jq('#chapters, #sections, #subsections').tabs();
 
   // show deep link from URL
-  var deep_link_nodes = window.location.hash.substring(1).split('/');
-  if (deep_link_nodes != null) {
-     
-    if (deep_link_nodes[0] != null) {
-      jq(chapters).tabs('select', deep_link_nodes[0]);
+  var go_to_deep_link = function() {
+    var deep_link_nodes = window.location.hash.substring(1).split('/');
+    if (deep_link_nodes != null) {
+      if (deep_link_nodes[0] != null) {
+        jq(chapters).tabs('select', deep_link_nodes[0]);
+      }
+      if (deep_link_nodes[1] != null) {
+        jq(sections).tabs('select', deep_link_nodes[1]);
+      }
+      if (deep_link_nodes[2] != null) {
+        jq(subsections).tabs('select', deep_link_nodes[2]);
+      }
     }
-    if (deep_link_nodes[1] != null) {
-      jq(sections).tabs('select', deep_link_nodes[1]);
-    }
-    if (deep_link_nodes[2] != null) {
-      jq(subsections).tabs('select', deep_link_nodes[2]);
-    }
-  }
+  };
 
   // add deep link to URL
   jq('.ui-tabs-nav li a').click(function(){
@@ -34,6 +35,11 @@ jQuery(function(){
     else {
       window.location.hash = jq(this).attr('href');
     }
+  });
+
+  // enable back/forward buttons
+  jq(window).hashchange(function(){
+    go_to_deep_link();
   });
 
   // jq('#sections .ui-tabs-panel').each(function(i){

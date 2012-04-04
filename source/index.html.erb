@@ -16,6 +16,8 @@
         BELOW is dojo4-provided content; ABOVE is Trilogy template content
         -->
 
+        <%= javascript_include_tag 'application', 'jquery.ba-hashchange.min' %>
+
         <div id="chapters">
 
           <ul>
@@ -45,9 +47,9 @@
                   <% section_index = section_index + 1 %>
                   <div id="section<%= section_index %>" class="ui-tabs-panel">
                     <div class="pad">
-                      <p>
-                        <%= section.content %>
-                      </p>
+                      <% if section.content %>
+                        <%= simple_format(section.content) %>
+                      <% end %>
 
                       <% if section.subsections %> 
                         <div id="subsections">
@@ -62,9 +64,9 @@
                           <% section.subsections.each_with_index do |subsection, subsection_index| %>
                             <% subsection_index = subsection_index + 1 %>
                             <div id="subsection<%= subsection_index %>" class="ui-tabs-panel">
-                              <p>
-                                <%= subsection.content %>
-                              </p>
+                              <% if subsection.content %>
+                                <%= simple_format(subsection.content) %>
+                              <% end %>
                             </div><!-- eo #subsection<%= subsection_index %> -->
                           <% end %>
 
