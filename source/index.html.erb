@@ -18,7 +18,7 @@
 
         <%= javascript_include_tag 'application', 'jquery.ba-hashchange.min' %>
 
-        <div id="chapters">
+        <div id="chapters" class="tabs">
 
           <ul>
             <% data.chapters.each_with_index do |chapter, chapter_index| %>
@@ -30,11 +30,11 @@
           <% data.chapters.each_with_index do |chapter, chapter_index| %>
 
             <% chapter_index = chapter_index + 1 %>
-            <div id="chapter<%= chapter_index %>">
+            <div id="chapter<%= chapter_index %>" class="tab">
 
               <h1 class="tk-proxima-nova"><%= chapter.title %></h1>
           
-              <div id="sections">
+              <div id="sections" class="tabs">
 
                 <ul class="section-nav clearfix">
                 <% chapter.sections.each_with_index do |section, section_index| %>
@@ -45,14 +45,14 @@
 
                 <% chapter.sections.each_with_index do |section, section_index| %>
                   <% section_index = section_index + 1 %>
-                  <div id="section<%= section_index %>" class="ui-tabs-panel">
+                  <div id="section<%= section_index %>" class="tab ui-tabs-panel">
                     <div class="pad">
                       <% if section.content %>
                         <%= simple_format(section.content) %>
                       <% end %>
 
                       <% if section.subsections %> 
-                        <div id="subsections">
+                        <div id="subsections" class="tabs">
 
                           <ul>
                           <% section.subsections.each_with_index do |subsection, subsection_index| %>
@@ -63,7 +63,7 @@
 
                           <% section.subsections.each_with_index do |subsection, subsection_index| %>
                             <% subsection_index = subsection_index + 1 %>
-                            <div id="subsection<%= subsection_index %>" class="ui-tabs-panel">
+                            <div id="subsection<%= subsection_index %>" class="tab ui-tabs-panel">
                               <% if subsection.content %>
                                 <%= simple_format(subsection.content) %>
                               <% end %>

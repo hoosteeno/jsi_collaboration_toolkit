@@ -3,70 +3,45 @@ jQuery(function(){
   // this is inside to avoid clobbering $ for other jQuery scripts
   var jq = jQuery.noConflict();
 
-  jq('#chapters, #sections, #subsections').tabs();
+  var tabbish = jq('.tabs');
+  tabbish.tabs({event: 'change'});
 
-  // show deep link from URL
+  // show tabs specified in URL
   var go_to_deep_link = function() {
-    var deep_link_nodes = window.location.hash.substring(1).split('/');
-    if (deep_link_nodes != null) {
-      if (deep_link_nodes[0] != null) {
-        jq(chapters).tabs('select', deep_link_nodes[0]);
-      }
-      if (deep_link_nodes[1] != null) {
-        jq(sections).tabs('select', deep_link_nodes[1]);
-      }
-      if (deep_link_nodes[2] != null) {
-        jq(subsections).tabs('select', deep_link_nodes[2]);
-      }
+
+    // break URL into nodes
+    var nodes = window.location.hash.substring(1).split('/');
+
+    // jquery-ui tab select divs with ids specified in nodes
+    for (var i = 0; i < nodes.length; i++) {
+      jq(tabbish).tabs('select', nodes[i]);
     }
+
+    // select first child tabs of the last tab specified in nodes
+    children = jq('#'+nodes[nodes.length-1]).find('.tabs');
+    children.each(function() {
+      first_tab = jq(this).find('.tab').first();
+      jq(tabbish).tabs('select', first_tab.attr('id'));
+    });
+
   };
 
-  // add deep link to URL
+  // do this first
+  go_to_deep_link()
+
+  // add a deep link to the URL on click
   jq('.ui-tabs-nav li a').click(function(){
-    if (jq(this).closest('#subsections').size() > 0) {
-      var chapter = jq(this).closest('div[id^="chapter"]').attr('id');
-      var section = jq(this).closest('div[id^="section"]').attr('id');
-      window.location.hash = '#'+chapter+'/'+section+'/'+jq(this).attr('href').substring(1);
-    }
-    else if (jq(this).closest('#sections').size() > 0) {
-      var chapter = jq(this).closest('div[id^="chapter"]').attr('id');
-      window.location.hash = '#'+chapter+'/'+jq(this).attr('href').substring(1);
-    }
-    else {
-      window.location.hash = jq(this).attr('href');
-    }
+    var nodes = '';
+    jq(this).parents('.tab').each(function() {
+      nodes = jq(this).attr('id') + '/' + nodes;
+    });
+    window.location.hash = '#' + nodes + jq(this).attr('href').substring(1);
   });
 
-  // enable back/forward buttons
+  // show the appropriate tabs when the URL changes (as in the click handler above)
   jq(window).hashchange(function(){
     go_to_deep_link();
   });
-
-  // jq('#sections .ui-tabs-panel').each(function(i){
-  //   var lastinarray = jq("#sections .ui-tabs-panel").size() - 1;
-  //   var current = i + 1;
-
-  //   // if "i" is not last in array
-  //   if (i != lastinarray) {
-  //     // next equals current plus one
-  //     next = current + 1;
-  //     jq(this).append("<a href='#section"+next+"' class='next-section section-link' rel='" + next + "'>Next Page &#187;</a>");
-  //   }
-
-  //   // if "i" is not first in array
-  //   if (i != 0) {
-  //       prev = current - 1;
-  //       jq(this).append("<a href='#section"+prev+"' class='prev-section section-link' rel='" + prev + "'>&#171; Prev Page</a>");
-  //   }
-
-  // });
-
-  // jq('.next-section, .prev-section').click(function() {
-  //   jq(sections).tabs('select', jq(this).attr("href"));
-  //    return false;
-  // });
-
-
 });
 
 
