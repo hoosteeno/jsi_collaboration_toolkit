@@ -36,23 +36,20 @@
   #chapters {
     position: relative;
     .ui-tabs-panel {
+      min-height: 400px;
       margin-top: -1px;
       padding: 0 0 20px;
       border: 1px solid #eee;
       .pad {
         padding: 20px 10px;
         .ui-tabs-panel {
+          min-height: 0;
           border: none;
-        }
-        .next-section, .prev-section {
-          position: absolute;
-          bottom: 10px;
-        }
-        .next-section {
-          right: 10px;
-        }
-        .prev-section {
-          left: 10px;
+          #sections {
+            .ui-tabs-selected a {
+              color: black;
+            }
+          }
         }
       }
     }

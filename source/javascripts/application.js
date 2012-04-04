@@ -3,9 +3,9 @@
 
 jQuery(document).ready(function(){
 
-  jQuery('#chapters').tabs({ fx: { opacity: 'toggle' } });
-  jQuery('#sections').tabs();
+  jQuery('#chapters, #sections').tabs();
 
+  // Exposes deep links
   var deep_link = window.location.hash.substring(1).split('/');
   if (deep_link != null) {
    if (deep_link[0] != null) {
@@ -16,6 +16,16 @@ jQuery(document).ready(function(){
    }
   }
 
+  // This sets hashtag on URL
+  jQuery('.ui-tabs-nav li a').click(function(){
+    if (jQuery(this).closest('#sections').size() > 0) {
+      var chapter = jQuery(this).closest('div[id^="chapter"]').attr('id');
+      window.location.hash = '#'+chapter+'/'+jQuery(this).attr('href').substring(1);
+    }
+    else {
+      window.location.hash = jQuery(this).attr('href');
+    }
+  });
 
   // jQuery('#sections .ui-tabs-panel').each(function(i){
   //   var lastinarray = jQuery("#sections .ui-tabs-panel").size() - 1;
