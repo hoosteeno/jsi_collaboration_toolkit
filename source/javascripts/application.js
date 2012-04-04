@@ -26,10 +26,10 @@ jQuery(function(){
 
   };
 
-  // do this first
+  // the very first pageload may have a deep link
   go_to_deep_link()
 
-  // add a deep link to the URL on click
+  // add a deep link to the URL when any tab nav is clicked
   jq('.ui-tabs-nav li a').click(function(){
     var nodes = '';
     jq(this).parents('.tab').each(function() {
@@ -38,7 +38,7 @@ jQuery(function(){
     window.location.hash = '#' + nodes + jq(this).attr('href').substring(1);
   });
 
-  // show the appropriate tabs when the URL changes (as in the click handler above)
+  // show the appropriate tabs when the URL changes 
   jq(window).hashchange(function(){
     go_to_deep_link();
   });
