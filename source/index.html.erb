@@ -5,63 +5,84 @@
             <li class="current"><a href="/ash/oah/oah-initiatives/tpp/index.html"><%= data.site.title %></a></li>
           </ol>
         </div>
+
         <div class="hgroup">
           <h1 class="tk-proxima-nova"><%= data.site.title %></h1>
         </div>
+
         <div class="entry-content">
-          <div id="chapters">
-            <ul class="chapter-nav clearfix">
-              <li><a href="#chapter1">Tab One</a></li>
-              <li><a href="#chapter2">Tab Two</a></li>
-              <li><a href="#chapter3">Tab Three</a></li>
-              <li><a href="#chapter4">Tab Four</a></li>
-            </ul>
-            <div id="chapter1" class="ui-tabs-panel">
-              <div class="pad">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div><!-- eo .pad -->
-            </div><!-- eo #chapter1 -->
-            <div id="chapter2" class="ui-tabs-panel ui-tabs-hide">
-              <div class="pad">
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div><!-- eo .pad -->
-            </div><!-- eo #chapter2 -->
-            <div id="chapter3" class="ui-tabs-panel ui-tabs-hide">
-              <div class="pad">
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div><!-- eo .pad -->
-            </div><!-- eo #chapter3 -->
-            <div id="chapter4" class="ui-tabs-panel ui-tabs-hide">
-              <div class="pad">
-                <div id="sections">
-                  <ul>
-                    <li><a href="#section1">section1</a></li>
-                    <li><a href="#section2">section2</a></li>
-                    <li><a href="#section3">section3</a></li>
-                  </ul>
-                  <div id="section1" class="ui-tabs-panel">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    </p>
-                  </div><!-- eo #section1 -->
-                  <div id="section2" class="ui-tabs-panel ui-tabs-hide">
-                    <p>
-                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-                    </p>
-                  </div><!-- eo #section2 -->
-                  <div id="section3" class="ui-tabs-panel ui-tabs-hide">
-                    <p>
-                      Foobar, foobar, foobar, foobar. 
-                    </p>
-                  </div><!-- eo #section3 -->
-                </div><!-- eo #sections -->
-              </div><!-- eo .pad -->
-            </div><!-- eo #chapter4 -->
-          </div><!-- eo #chapters -->
+
+        <!-- 
+        BELOW is dojo4-provided content; ABOVE is Trilogy template content
+        -->
+
+        <div id="chapters">
+
+          <ul>
+            <% data.chapters.each_with_index do |chapter, chapter_index| %>
+              <% chapter_index = chapter_index + 1 %>
+              <li><a href="#chapter<%= chapter_index %>"><%= chapter.title %></a></li>
+            <% end %>
+          </ul>
+
+          <% data.chapters.each_with_index do |chapter, chapter_index| %>
+
+            <% chapter_index = chapter_index + 1 %>
+            <div id="chapter<%= chapter_index %>">
+
+              <h1 class="tk-proxima-nova"><%= chapter.title %></h1>
+          
+              <div id="sections">
+
+                <ul class="section-nav clearfix">
+                <% chapter.sections.each_with_index do |section, section_index| %>
+                  <% section_index = section_index + 1 %>
+                  <li><a href="#section<%= section_index %>"><%= section.title %></a></li>
+                <% end %>
+                </ul>
+
+                <% chapter.sections.each_with_index do |section, section_index| %>
+                  <% section_index = section_index + 1 %>
+                  <div id="section<%= section_index %>" class="ui-tabs-panel">
+                    <div class="pad">
+                      <p>
+                        <%= section.content %>
+                      </p>
+
+                      <% if section.subsections %> 
+                        <div id="subsections">
+
+                          <ul>
+                          <% section.subsections.each_with_index do |subsection, subsection_index| %>
+                            <% subsection_index = subsection_index + 1 %>
+                            <li><a href="#subsection<%= subsection_index %>"><%= subsection.title %></a></li>
+                          <% end %>
+                          </ul>
+
+                          <% section.subsections.each_with_index do |subsection, subsection_index| %>
+                            <% subsection_index = subsection_index + 1 %>
+                            <div id="subsection<%= subsection_index %>" class="ui-tabs-panel">
+                              <p>
+                                <%= subsection.content %>
+                              </p>
+                            </div><!-- eo #subsection<%= subsection_index %> -->
+                          <% end %>
+
+                        </div><!-- eo #subsections -->
+                      <% end %>
+
+                    </div><!-- eo .pad -->
+                  </div><!-- eo #section<%= section_index %> -->
+
+                <% end %>
+
+              </div><!-- eo #sections -->
+            </div><!-- eo #chapter<%= chapter_index %> -->
+          <% end %>
+        </div><!-- eo #chapters -->
+
+        <!-- 
+        ABOVE is dojo4-provided content; BELOW is Trilogy template content
+        -->
+
         </div><!-- eo .entry-content -->
