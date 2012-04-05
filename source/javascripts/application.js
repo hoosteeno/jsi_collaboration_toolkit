@@ -18,8 +18,9 @@ jQuery(function(){
     }
 
     // select first child tabs of the last tab specified in nodes
-    if (nodes[nodes.length-1] > 0) {
-      children = jq('#'+nodes[nodes.length-1]).find('.tabs');
+    last_node = nodes.pop();
+    if (last_node != '' && last_node != null) {
+      children = jq('#'+last_node).find('.tabs');
       children.each(function() {
         first_tab = jq(this).find('.tab').first();
         jq(tabbish).tabs('select', first_tab.attr('id'));
