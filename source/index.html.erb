@@ -20,19 +20,21 @@
 
         <div id="chapters" class="tabs">
 
-          <ul>
+          <ul class="chapter-nav ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
             <% data.chapters.each_with_index do |chapter, chapter_index| %>
-              <% chapter_index = chapter_index + 1 %>
-              <li><a href="#chapter<%= chapter_index %>"><%= chapter.title %></a></li>
+              <li>
+                <a href="#chapter<%= chapter_index %>"><%= chapter.title %></a>
+              </li>
             <% end %>
           </ul>
 
           <% data.chapters.each_with_index do |chapter, chapter_index| %>
 
-            <% chapter_index = chapter_index + 1 %>
             <div id="chapter<%= chapter_index %>" class="tab">
 
-              <h1 class="tk-proxima-nova"><%= chapter.title %></h1>
+              <h1 class="tk-proxima-nova">
+                <%= chapter.title %><% if chapter.subtitle %>: <%= chapter.subtitle %><% end %>
+              </h1>
           
               <div id="sections" class="tabs">
 

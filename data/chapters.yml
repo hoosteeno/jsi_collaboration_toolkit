@@ -1,24 +1,49 @@
 -
-  title: Chapter 1
+  title: Introduction
+  subtitle: 
   sections:
     -
-      title: Section 1 is nice
+      title: "Welcome!"
+      content: |
+        This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.
+
+        The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.  
+
+        Such strategies are vital in order for adolescent pregnancy prevention and parenting organizations to improve the health and social outcomes for vulnerable adolescents, build support and capacity within their local communities for these adolescents, and foster increased awareness of the important services these organizations provide to vulnerable youths. 
+
+        Although many of the examples provided throughout the Toolkit focus on adolescent pregnancy prevention and parenting organizations, the concepts in the Toolkit are applicable to a wide range of organizations that provide services to vulnerable adolescents.
+
+-
+  title: Chapter 1
+  subtitle: Building Strategic Partnerships
+  sections:
+    -
+      title: "Defining Strategic Partnerships"
       content: |
         This Section 1 content is shaped like a honeybaked ham. Denim, sed molestie metus metus nec velit. 
     
         Ut tincidunt purus non tortor adipiscing mattis. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper tellus eget mi tincidunt quis rutrum dui hendrerit. Etiam at nibh eget orci pretium iaculis. Donec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
     -
-      title: Section 2, which has a longer title than most others
+      title: "Building and Implementing Partnerships"
       content: |
         Section 2, on the other hand, is shapeless, but sounds like a symphony. Ut tincidunt purus non tortor adipiscing mattis. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. 
 
         Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper tellus eget mi tincidunt quis rutrum dui hendrerit. Etiam at nibh eget orci pretium iaculis. Donec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
+    -
+      title: Resources
+      content: |
+        TKTKTKKKK
+    -
+      title: Case Studies
+      content: |
+        TKTKTKKKK
 
 -
-  title: Chapter 2, which has a longer title than most others
+  title: Chapter 2
+  subtitle: Effective Outreach Strategies
   sections:
     -
-      title: Section 1, better than the best
+      title: "Performing an Assessment"
       content: |
         Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
 
@@ -34,11 +59,49 @@
             Subsection 2 content right here.
 
             It has 2 paragraphs. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper.
+    -
+      title: "Leveraging Assets"
+      content: |
+        Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
+
+        This is the second paragraph of section 1's content. 
+    -
+      title: "Implementing Outreach Strategies"
+      content: |
+        Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
+
+        This is the second paragraph of section 1's content. 
+    -
+      title: Resources
+      content: |
+        TKTKTKKKK
+    -
+      title: Case Studies
+      content: |
+        TKTKTKKKK
 
 -
   title: Chapter 3
+  subtitle: Crafting Clear Communications
   sections:
     -
-      title: A section!
+      title: Steps to Crafting Clear Communications
       content: |
         TKTKTKKKK
+    -
+      title: Resources
+      content: |
+        TKTKTKKKK
+    -
+      title: Case Studies
+      content: |
+        TKTKTKKKK
+
+-
+  title: Tools and Resources
+  subtitle: 
+  sections:
+    -
+      title: "Downloads"
+      content: |
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
