@@ -1,3 +1,4 @@
+require 'redcloth'
 ### 
 # Compass
 ###
@@ -60,6 +61,10 @@ helpers do
       else
         data.site.send(thingy) || ''
       end
+  end
+
+  def textile_format(content)
+    RedCloth.new(content).to_html
   end
 end
 

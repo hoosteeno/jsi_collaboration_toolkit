@@ -50,7 +50,7 @@
                   <div id="section<%= section_index %>" class="tab ui-tabs-panel">
                     <div class="pad">
                       <% if section.content %>
-                        <%= simple_format(section.content) %>
+                        <%= textile_format(section.content) %>
                       <% end %>
 
                       <% if section.subsections %> 
@@ -67,7 +67,7 @@
                             <% subsection_index = subsection_index + 1 %>
                             <div id="subsection<%= subsection_index %>" class="tab ui-tabs-panel">
                               <% if subsection.content %>
-                                <%= simple_format(subsection.content) %>
+                                <%= textile_format(subsection.content) %>
                               <% end %>
                             </div><!-- eo #subsection<%= subsection_index %> -->
                           <% end %>

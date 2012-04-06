@@ -9,3 +9,4 @@ gem "rb-fsevent"
 gem "tagz"
 
 gem "map"
+gem "RedCloth"
