@@ -5,13 +5,18 @@
     -
       title: "Welcome!"
       content: |
-        This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.
-
-        The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.  
-
-        Such strategies are vital in order for adolescent pregnancy prevention and parenting organizations to improve the health and social outcomes for vulnerable adolescents, build support and capacity within their local communities for these adolescents, and foster increased awareness of the important services these organizations provide to vulnerable youths. 
-
-        Although many of the examples provided throughout the Toolkit focus on adolescent pregnancy prevention and parenting organizations, the concepts in the Toolkit are applicable to a wide range of organizations that provide services to vulnerable adolescents.
+        <h3>Toolkit</h3>
+        <div class="row-fluid">
+          <div class="span8">
+            <p>This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.</p>
+            <p>The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.</p>
+            <p>Such strategies are vital in order for adolescent pregnancy prevention and parenting organizations to improve the health and social outcomes for vulnerable adolescents, build support and capacity within their local communities for these adolescents, and foster increased awareness of the important services these organizations provide to vulnerable youths.</p>
+            <p>Although many of the examples provided throughout the Toolkit focus on adolescent pregnancy prevention and parenting organizations, the concepts in the Toolkit are applicable to a wide range of organizations that provide services to vulnerable adolescents.
+          </div>
+          <div class="span4 toolkit-toc">
+            <h4>Table of Contents</h4>
+          </div>
+        </div>
 
 -
   title: Chapter 1
