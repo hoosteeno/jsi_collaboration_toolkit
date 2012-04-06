@@ -1,5 +1,5 @@
 // @import "bootstrap.css";
-// @import "bootstrap-responsive.css";
+@import "bootstrap-responsive.css";
 @import "existing.css";
 
 // Variables
@@ -11,15 +11,30 @@
   ul {
     &.chapter-nav {
       list-style: none;
-      margin: 0 0 20px;
+      margin: 0 0 40px;
       padding: 0;
       li {
         display: inline;
         margin: 0;
+        padding: 0 7px;
+        border-left: 1px solid #e1e1e1;
+        font-weight: bold;
+        text-align: center;
+        &:first-child {
+          padding-left: 0;
+          border-left: none;
+        }
+        a:hover {
+          border-bottom: 2px solid #224b89;
+        }
         &.ui-state-active {
           a {
             &:link, &:visited, &:focus {
               color: black;
+              border-bottom: 2px solid #000;
+            }
+            &:hover {
+              cursor: default;
             }
           }
         }
@@ -31,7 +46,7 @@
       list-style-type: none;
       li {
         float: left;
-        margin-left: 10px;
+        margin-left: 5px;
         &:first-child {
           margin-left: 0;
         }
@@ -40,7 +55,20 @@
           padding: 5px 10px;
           border: 1px solid #eee;
           border-bottom: none;
-          background: #eee;
+          -webkit-border-radius: 3px 3px 0 0;
+          -moz-border-radius: 3px 3px 0 0;
+          border-radius: 3px 3px 0 0;
+          background: #f5f5f5; /* Old browsers */
+          background: -moz-linear-gradient(top,  #f5f5f5 0%, #dcdcdc 100%); /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#dcdcdc)); /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(top,  #f5f5f5 0%,#dcdcdc 100%); /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(top,  #f5f5f5 0%,#dcdcdc 100%); /* Opera 11.10+ */
+          background: -ms-linear-gradient(top,  #f5f5f5 0%,#dcdcdc 100%); /* IE10+ */
+          background: linear-gradient(top,  #f5f5f5 0%,#dcdcdc 100%); /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#dcdcdc',GradientType=0 ); /* IE6-9 */
+          color: black;
+          font-weight: bold;
+          text-shadow: 1px 1px 0 rgba(255,255,255, 0.75);
           &:hover {
             background: transparent;
           }
@@ -68,6 +96,18 @@
             .ui-tabs-selected a {
               color: black;
             }
+          }
+        }
+        .toolkit-toc {
+          min-height: 400px;
+          background: #e1e1e1;
+          h4 {
+            padding: 10px 0;
+            background: #333;
+            font-size: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
           }
         }
       }
