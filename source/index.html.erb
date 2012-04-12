@@ -47,7 +47,7 @@
 
                 <% chapter.sections.each_with_index do |section, section_index| %>
                   <% section_index = section_index + 1 %>
-                  <% rows = rows + '.' + section_index.to_s %>
+                  <% rows = rows + '-' + section_index.to_s %>
 
                   <div id="section<%= section_index %>" class="tab ui-tabs-panel">
                     <div class="pad">
@@ -66,7 +66,7 @@
                           <% 
                             section.subsections.each_with_index do |subsection, subsection_index| 
                               subsection_index = subsection_index + 1 
-                              rows = rows + '.' + subsection_index.to_s 
+                              rows = rows + '-' + subsection_index.to_s 
                           %>
 
                             <div id="subsection<%= subsection_index %>" class="tab ui-tabs-panel">

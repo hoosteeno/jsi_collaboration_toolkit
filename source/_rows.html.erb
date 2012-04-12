@@ -1,8 +1,9 @@
 
                               <% if data.data_for_path rows %>
 
-                                <% data.send(rows).each do |row| %>
-                                  <div class="row-fluid">
+                                <% data.send(rows).each_with_index do |row, row_index| %>
+                                  <% row_index = row_index + 1 %>    
+                                  <div class="row-fluid" id="<%= rows + "-" + row_index.to_s %>">
 
                                     <% if row.layout %>
                                       <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
