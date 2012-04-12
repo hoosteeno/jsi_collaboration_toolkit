@@ -47,6 +47,7 @@
                   <% section_index = section_index + 1 %>
                   <div id="section<%= section_index %>" class="tab ui-tabs-panel">
                     <div class="pad">
+                      <div class="row-fluid">
                       <% if section.layout == 'two_col' %>
                         <%= partial(:two_col, :locals => { :section => section }) %>
                       <% else %>
@@ -74,7 +75,7 @@
 
                         </div><!-- eo #subsections -->
                       <% end %>
-
+                      </div><!-- eo .row-fluid -->
                     </div><!-- eo .pad -->
                   </div><!-- eo #section<%= section_index %> -->
 
