@@ -4,34 +4,6 @@
   sections:
     -
       title: "Welcome!"
-      content: |
-
-        <div class="span8">
-        <h2>What Is the Collaboration Toolkit?</h2>
-
-        This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.
-
-        The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.  
-
-        Such strategies are vital in order for adolescent pregnancy prevention and parenting organizations to improve the health and social outcomes for vulnerable adolescents, build support and capacity within their local communities for these adolescents, and foster increased awareness of the important services these organizations provide to vulnerable youths. 
-
-        Although many of the examples provided throughout the Toolkit focus on adolescent pregnancy prevention and parenting organizations, the concepts in the Toolkit are applicable to a wide range of organizations that provide services to vulnerable adolescents.
-        </div>
-
-        <div class="span4">
-        <div class="pad" style="background:#f5f5f5;border:1px solid #ccc;-webkit-box-shadow: inset 0 0 0 1px white;-moz-box-shadow: inset 0 0 0 1px white;box-shadow: inset 0 0 0 1px white;">
-        <h4 class="tk-proxima-nova" style="border-bottom: 1px double #ccc;">At a Glance</h4>
-
-        <dl style="margin-bottom: 0;">
-        <dt>"Chapter 1":#chapter1</dt>
-        <dd style="margin:0 0 0.8em 0;">_Building Strategic Partnerships_ focuses on strategies for negotiating, building, and maintaining partnerships with other key organizations in the community that can assist you in achieving your goals.</dd>
-        <dt>"Chapter 2":#chapter2</dt>
-        <dd style="margin:0 0 0.8em 0;">_Effective Outreach Strategies_ focuses on utilizing outreach strategies that will enhance your relationships with community members.</dd>
-        <dt>"Chapter 3":#chapter3</dt>
-        <dd style="margin:0 0 0 0;">_Crafting Clear Communications_ focuses on a broader, general audience and guides organizations through the specific steps necessary to develop and disseminate key messages.</dd>
-        </dl>
-        </div> 
-        </div>
 
 -
   title: Chapter 1
@@ -39,33 +11,9 @@
   sections:
     -
       title: "Defining Strategic Partnerships"
-      content: |
-        <dl class="tk-proxima-nova" style="width:30%;float:right;margin:0 0 1.5em 1.5em;border-right:2px solid #166E9B;text-align:right;">
-          <dt style="font-size:1.3em;font-style:italic;padding:0 13px;color:#166E9B;">Key Term: Partnership</dt>
-          <dd style="background:#edf5ff;margin-left:0;padding:10px 13px;">A group of organizations with a common interest who agree to work together toward a common goal</dd>
-        </dl>
-        <p>The term partnership and related terms such as collaboration, coalition, network, task group, work group, cooperation and others, are used to describe a wide variety of relationships and structures.</p>
-        <p>For purposes of this Toolkit, partnership refers to a group of organizations with a common interest who agree to work together toward a common goal.</p>
-        <p>That goal could be as narrow as obtaining funding for a specific intervention, or as broad as trying to improve the overall quality of life for pregnant and parenting adolescents in the community.  Likewise, the organizations involved might be drawn from a narrow area of interest, or might include representation from every segment of the community.</p>
-        <ul>
-          <li>Improving access to education to foster economic development and work skills;</li>
-          <li>Enhancing public safety by preventing crime and reducing risk behaviors; and</li>
-          <li>Encouraging civic engagement and service to a new generation.</li>
-        </ul>
-    -
-      title: "Building and Implementing Partnerships"
-      content: |
-        Section 2, on the other hand, is shapeless, but sounds like a symphony. Ut tincidunt purus non tortor adipiscing mattis. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. 
-
-        Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper tellus eget mi tincidunt quis rutrum dui hendrerit. Etiam at nibh eget orci pretium iaculis. Donec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
-    -
-      title: Resources
-      content: |
-        TKTKTKKKK
-    -
-      title: Case Studies
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
 
 -
   title: Chapter 2
@@ -73,41 +21,31 @@
   sections:
     -
       title: "Performing an Assessment"
-      content: |
-        Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
-
-        This is the second paragraph of section 1's content. 
       subsections: 
         -
           title: It's Subsection 1
-          content: |
-            Subsection 1 content right here. Lenim, sed molestie metus metus nec velit. Ut tincidunt purus non tortor adipiscing mattis. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper tellus eget mi tincidunt quis rutrum dui hendrerit. Etiam at nibh eget orci pretium iaculis. Donec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
         - 
           title: Subsection 2, which has an incredibly long title with an &amp; in it.
-          content: |
-            Subsection 2 content right here.
-
-            It has 2 paragraphs. Vestibulum non sapien ac mi luctus aliquet sit amet vitae urna. Curabitur tellus urna, ullamcorper eu accumsan eu, posuere non sem. Duis ullamcorper.
     -
       title: "Leveraging Assets"
-      content: |
-        Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
-
-        This is the second paragraph of section 1's content. 
+      subsections:
+        -
+          title: "TKTKTK"
     -
       title: "Implementing Outreach Strategies"
-      content: |
-        Lonec in quam non ipsum pharetra placerat. Nulla eu laoreet arcu. Mauris ut mattis purus. Quisque ac justo lacus, in pretium ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam aliquet, libero vitae auctor sagittis, metus diam ultrices nisi, eget gravida felis tellus a ante. Nam ut facilisis eros. Donec ut leo erat, et laoreet urna.
-
-        This is the second paragraph of section 1's content. 
+      subsections:
+        -
+          title: "TKTKTK"
     -
       title: Resources
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
     -
       title: Case Studies
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
 
 -
   title: Chapter 3
@@ -115,16 +53,19 @@
   sections:
     -
       title: Steps to Crafting Clear Communications
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
     -
       title: Resources
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
     -
       title: Case Studies
-      content: |
-        TKTKTKKKK
+      subsections:
+        -
+          title: "TKTKTK"
 
 -
   title: Tools and Resources
@@ -132,5 +73,6 @@
   sections:
     -
       title: "Downloads"
-      content: |
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      subsections:
+        -
+          title: "TKTKTK"

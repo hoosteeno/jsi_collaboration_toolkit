@@ -1,0 +1,16 @@
+
+                              <% if data.data_for_path rows %>
+
+                                <% data.send(rows).each do |row| %>
+                                  <div class="row-fluid">
+
+                                    <% if row.layout %>
+                                      <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
+                                    <% else %>
+                                      <%= partial(:one_col, :locals => { :content => row.content }) %>
+                                    <% end %>
+
+                                  </div>
+                                <% end %>
+
+                              <% end %>

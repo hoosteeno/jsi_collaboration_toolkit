@@ -1,0 +1,18 @@
+-
+  layout: one_col
+  content: |
+    this is the content for the first row, which has a one_col layout
+-
+  layout: two_col
+  content: 
+    column1: |
+      this is the content for column_1
+    column2: |
+      this is the content for column_2
+
+      it has a newline
+
+      h1. and an h1
+-
+  content: |
+     this is the content for the third row. it doesn't even have a layout!
