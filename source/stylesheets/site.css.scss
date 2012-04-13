@@ -89,6 +89,8 @@
       border: 1px solid #eee;
       .pad {
         padding: 20px 10px;
+        font: 400 16px/1.7 helvetica, arial, sans-serif;
+        color: #666;
         .ui-tabs-panel {
           min-height: 0;
           border: none;
@@ -116,6 +118,50 @@
       position: absolute;
       left: -9999px;
     }
+  }
+}
+
+// Gloss module (drop class on DIV or DL)
+.gloss {
+  width: 30%;
+  float: right;
+  margin: 0 0 20px 20px;
+  padding: 0;
+  border-right: 3px solid #166E9B;
+  dt, h4 {
+    padding: 0 13px 0 10px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #166E9B;
+    text-align: right;
+    & + dd, & + p, & + ul {
+      -webkit-border-radius: 0.5em 0 0 0;
+      -moz-border-radius: 0.5em 0 0 0;
+      border-radius: 0.5em 0 0 0;
+    }
+  }
+  dd, p, ul {
+    margin: 0;
+    padding: 10px 13px 10px 10px;
+    background: #ebf3fd;
+    font-size: 14px;
+  }
+  ul {
+    padding-left: 3em;
+    li {
+      margin: 10px 0 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  p + ul {
+    padding-top: 0;
+  }
+  & *:last-child {
+    -webkit-border-radius: 0 0 0 0.5em;
+    -moz-border-radius: 0 0 0 0.5em;
+    border-radius: 0 0 0 0.5em;
   }
 }
 

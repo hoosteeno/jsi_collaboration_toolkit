@@ -1,0 +1,36 @@
+-
+  layout: one_col
+  content: |
+    <div class="gloss">
+    h4(tk-proxima-nova). At a Glance
+
+    This chapter provides information on how to:
+    * Bolster your organization’s understanding of the diverse types of partnerships
+    * Identify potential partner organizations, negotiate and build strategic partnerships
+    * Maintain these partnerships in a way that is mutually beneficial to both parties
+
+    </div>
+
+    This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.  The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.
+
+    Such strategies are vital in order for adolescent pregnancy prevention and parenting organizations to improve the health and social outcomes for vulnerable adolescents, build support and capacity within their local communities for these adolescents, and foster increased awareness of the important services these organizations provide to vulnerable youths. Although many of the examples provided throughout the Toolkit focus on adolescent pregnancy prevention and parenting organizations, the concepts in the Toolkit are applicable to a wide range of organizations that provide services to vulnerable adolescents.
+
+-
+  layout: two_col
+  content: 
+    column1: |
+      The Toolkit provides information and resources that will enable your organization to achieve the following objectives:
+
+      * Identify opportunities for forming strategic partnerships with other organizations in your community; 
+      * Identify priority target populations for outreach; and 
+      * Develop action-oriented messages tailored to specific audiences that will help engage your community in your efforts.
+
+    column2: |
+      By achieving these objectives, your organization will be able to attain the following long-term capacity-building goals:
+      * Stronger partnerships with other organizations working with vulnerable adolescents; 
+      * Increased awareness of the services offered by your organization; 
+      * Expanded access to a wider range of resources for adolescents and their families; and 
+      * Enhanced support for vulnerable adolescents.
+-
+  content: |
+     this is the content for the third row. it doesn't even have a layout!

@@ -22,11 +22,13 @@
           <ul class="chapter-nav ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
             <% data.chapters.each_with_index do |chapter, chapter_index| %>
               <li>
-                <a href="#chapter<%= chapter_index %>"><%= chapter.title %></a></li>
+                <a href="#chapter<%= chapter_index %>"><%= chapter.title %></a>
+              </li>
             <% end %>
           </ul>
 
           <% data.chapters.each_with_index do |chapter, chapter_index| %>
+            <% rows = chapter_index.to_s %>
 
             <div id="chapter<%= chapter_index %>" class="tab">
 
@@ -45,14 +47,11 @@
 
                 <% chapter.sections.each_with_index do |section, section_index| %>
                   <% section_index = section_index + 1 %>
+                  <% rows = rows + '-' + section_index.to_s %>
+
                   <div id="section<%= section_index %>" class="tab ui-tabs-panel">
                     <div class="pad">
                       <div class="row-fluid">
-                      <% if section.layout == 'two_col' %>
-                        <%= partial(:two_col, :locals => { :section => section }) %>
-                      <% else %>
-                        <%= partial(:one_col, :locals => { :section => section }) %>
-                      <% end %>
 
                       <% if section.subsections %> 
                         <div id="subsections" class="tabs">
@@ -64,17 +63,26 @@
                           <% end %>
                           </ul>
 
-                          <% section.subsections.each_with_index do |subsection, subsection_index| %>
-                            <% subsection_index = subsection_index + 1 %>
+                          <% 
+                            section.subsections.each_with_index do |subsection, subsection_index| 
+                              subsection_index = subsection_index + 1 
+                              rows = rows + '-' + subsection_index.to_s 
+                          %>
+
                             <div id="subsection<%= subsection_index %>" class="tab ui-tabs-panel">
-                              <% if subsection.layout %>
-                                <%= textile_format(subsection.content) %>
-                              <% end %>
+
+                            <%= partial(:rows, :locals => { :rows => rows }) %>
+
                             </div><!-- eo #subsection<%= subsection_index %> -->
                           <% end %>
 
                         </div><!-- eo #subsections -->
-                      <% end %>
+                      <% 
+                        else 
+                          concat(partial(:rows, :locals => { :rows => rows })) 
+                        end 
+                      %>
+
                       </div><!-- eo .row-fluid -->
                     </div><!-- eo .pad -->
                   </div><!-- eo #section<%= section_index %> -->
