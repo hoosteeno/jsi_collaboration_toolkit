@@ -34,8 +34,10 @@ jQuery(function(){
 
   // add a deep link to the URL when any tab nav is clicked
   jq('.ui-tabs-nav li a').click(function(){
+console.log(this);
     var nodes = '';
     jq(this).parents('.tab').each(function() {
+console.log(this);
       nodes = jq(this).attr('id') + '/' + nodes;
     });
     window.location.hash = '#' + nodes + jq(this).attr('href').substring(1);

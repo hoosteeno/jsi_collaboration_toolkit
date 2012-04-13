@@ -3,7 +3,8 @@
 
                                 <% data.send(rows).each_with_index do |row, row_index| %>
                                   <% row_index = row_index + 1 %>    
-                                  <div class="row-fluid" id="<%= rows + "-" + row_index.to_s %>">
+                                  <% row_id = rows + "-" + row_index.to_s %>
+                                  <div class="row-fluid" id="<%= row_id %>">
 
                                     <% if row.layout %>
                                       <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
@@ -11,7 +12,7 @@
                                       <%= partial(:one_col, :locals => { :content => row.content }) %>
                                     <% end %>
 
-                                  </div>
+                                  </div><!-- eo <%= row_id %> -->
                                 <% end %>
 
                               <% end %>
