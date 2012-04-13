@@ -4,6 +4,7 @@
   sections:
     -
       title: "Welcome!"
+      layout: one_col
       content: |
 
         <div class="span8">
