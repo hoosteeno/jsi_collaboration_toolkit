@@ -139,6 +139,13 @@
             margin-right: 0;
           }
         }
+        &.ui-tabs-selected a {
+          border-bottom: 1px solid black;
+          color: black;
+        }
+        a:hover {
+          border-bottom: 1px solid #224b89;
+        }
       }
     }
   }
