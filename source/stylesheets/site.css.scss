@@ -119,7 +119,31 @@
       left: -9999px;
     }
   }
+
+  #subsections {
+    .ui-tabs-nav {
+      margin: 0 0 20px;
+      padding: 0;
+      li {
+        list-style-type: none;
+        display: inline;
+        margin: 0 5px;
+        &:before {
+          content: '\00BB';
+          margin-right: 10px;
+        }
+        &:first-child {
+          padding-left: 0;
+          &:before {
+            content: '';
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
+
 
 // Gloss module (drop class on DIV or DL)
 .gloss {
@@ -131,7 +155,6 @@
   dt, h4 {
     padding: 0 13px 0 10px;
     font-size: 22px;
-    font-weight: 400;
     color: #166E9B;
     text-align: right;
     & + dd, & + p, & + ul {
@@ -150,6 +173,8 @@
     padding-left: 3em;
     li {
       margin: 10px 0 0;
+      font-weight: 600;
+      line-height: 1.4;
       &:first-child {
         margin-top: 0;
       }
