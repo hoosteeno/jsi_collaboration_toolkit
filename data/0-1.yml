@@ -2,10 +2,16 @@
   layout: one_col_with_gloss
   content: 
     gloss: |
-      h4(tk-proxima-nova). At a Glance
+      h4(tk-proxima-nova). Getting Started
 
-      This introduction provides information on how to:
-      ?
+      This module includes three chapters, each with several sections: 
+
+        * Chapter 1 talks about "building strategic partnerships":/#chapter1. 
+        * Chapter 2 covers "effective outreach strategies":/#chapter2. 
+        * Chapter 3 explains how to "craft effective communications":/#chapter3.
+
+      Move through the module in the order that makes sense to you.
+
     main: |
       This Toolkit is intended to assist organizations in the adolescent pregnancy prevention and parenting field with cultivating strategic partnerships, implementing innovative outreach strategies, and developing robust communications that target the diverse organizations and populations in their communities.  The Toolkit offers guidance for performing self-assessments of current partnership and outreach strategies that organizations are using to collaborate with and engage agencies and individuals in their communities.  The Toolkit also offers tools for building on these strategies to boost organizational capacity.
 
@@ -27,6 +33,3 @@
       * Increased awareness of the services offered by your organization; 
       * Expanded access to a wider range of resources for adolescents and their families; and 
       * Enhanced support for vulnerable adolescents.
--
-  content: |
-     this is the content for the third row. it doesn't even have a layout!

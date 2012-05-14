@@ -4,6 +4,8 @@
 
 // Variables
 
+$yellow: #FEDF9A;
+$purple: #9E2076;
 
 // Rules
 
@@ -151,6 +153,32 @@
   }
 }
 
+.outlined {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border: dotted 1px $purple;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+.chunky {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      margin: 0 0 10px 0;
+      background: $yellow;
+      color: #000;
+      list-style-type: none;
+      margin-bottom: 10px;
+      padding: 5px;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+    } 
+}
 
 // Gloss module (drop class on DIV or DL)
 .gloss {
