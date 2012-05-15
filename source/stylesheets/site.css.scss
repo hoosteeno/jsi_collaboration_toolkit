@@ -6,8 +6,16 @@
 
 $yellow: #FEDF9A;
 $purple: #9E2076;
+$light-gray: #e1e1e1;
+$light-blue: #224B89;
+$dark-blue: #166E9B;
 
 // Rules
+
+img {
+  display: block;
+  margin: 0 auto;
+}
 
 .entry-content {
   ul {
@@ -154,16 +162,44 @@ $purple: #9E2076;
 }
 
 .outlined {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
+    padding: 10px 10px 10px 30px;
     border: dotted 1px $purple;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
     border-radius: 0.5em;
 }
 
-.chunky {
+ul.alternating {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 5px;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    &:nth-child(even) {
+      background: $light-gray;
+    }
+    &:nth-child(odd) {
+      background: $yellow;
+    }
+  }
+}
+
+ul.alternating.reverse {
+  li {
+    &:nth-child(odd) {
+      background: $light-gray;
+    }
+    &:nth-child(even) {
+      background: $yellow;
+    }
+  }
+}
+
+ul.chunky {
     margin: 0;
     padding: 0;
     width: 100%;
