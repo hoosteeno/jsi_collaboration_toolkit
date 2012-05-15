@@ -122,6 +122,12 @@ img {
             color: white;
           }
         }
+        .footnotes {
+          border-top: 1px dotted #eee;
+          padding-top: 2em;
+          padding-left: 2em;
+          font-size: .8em;
+        }
       }
     }
     .ui-tabs-hide {
@@ -160,6 +166,17 @@ img {
     }
   }
 }
+
+.pull-quote {
+  font-size: 1.1em;
+  padding: 10px 10px 10px 30px;
+  background: $dark-blue;
+  color: #fff;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+}
+
 
 .outlined {
     padding: 10px 10px 10px 30px;

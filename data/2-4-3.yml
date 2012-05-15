@@ -2,16 +2,22 @@
   layout: one_col
   content: |
     h4. Objectives for your Outreach Strategies
+
     <dl class="gloss tk-proxima-nova">
-      <dt>key term: SMART objectives</dt>
+      <dt>Key Term: SMART Objectives</dt>
       <dd>SMART Objectives are Specific, Measurable, Attainable, Relevant, and Time-framed.</dd>
     </dl>
     
-    During the course of planning your outreach efforts you identify critical areas for strategic communication and define communication objectives that will result in the outcomes you desire as the objectives are operationalized. In order to increase the effectiveness of your objectives, it is important to make your objectives SMART.  That is, objectives should be Specific, Measurable, Attainable, Relevant and Time-bound. Having SMART objectives makes it easier to clearly define what you are supposed to achieve through implementation of the objective, hence facilitating the monitoring and evaluation process. An example of a SMART communication objective can be “distribute outreach material to 70% of all women in the community between the age of 13 and 19 by the end of the next year.”
+    During the course of planning your outreach efforts you identify critical areas for strategic communication and define communication objectives that will result in the outcomes you desire as the objectives are operationalized. In order to increase the effectiveness of your objectives, it is important to make your objectives SMART.  That is, objectives should be Specific, Measurable, Attainable, Relevant and Time-bound. Having SMART objectives makes it easier to clearly define what you are supposed to achieve through implementation of the objective, hence facilitating the monitoring and evaluation process. 
 
-    Your communication objectives should address issues such as awareness, knowledge, attitude, practice, behavior and participation. Each of these represents a communication level, which needs to be dealt with separately. If for instance your objective is to induce change in behavior, first you need to make individuals aware that there is a problem with the previous behavior. You then take steps to ensure that the knowledge and the attitude necessary for the change to take place are present. It is only when all these prerequisites are met that you can hope to achieve your communication objectives. [i]
+    p(pull-quote). Example of a SMART communication objective:
+    *"Distribute outreach material to 70% of all women in the community between the age of 13 and 19 by the end of the next year."*
 
-    The worksheet Develop SMART Communications Objectives under the Resources can guide your organization through the brainstorming and development of SMART objectives.
+    Your communication objectives should address issues such as awareness, knowledge, attitude, practice, behavior and participation. Each of these represents a communication level, which needs to be dealt with separately. If for instance your objective is to induce change in behavior, first you need to make individuals aware that there is a problem with the previous behavior. You then take steps to ensure that the knowledge and the attitude necessary for the change to take place are present. It is only when all these prerequisites are met that you can hope to achieve your communication objectives. ^[i]^
+
+    The worksheet "Develop SMART Communications Objectives":downloads/2-5-5_Worksheet-Develop_SMART_Communications_Objectives.pdf can guide your organization through the brainstorming and development of SMART objectives.
     
-    Footnotes:
-    [i] www.fao.org/docrep/008/y5794e/Y5794E04.htm
+- 
+  layout: footnotes
+  content: |
+    [i] "www.fao.org/docrep/008/y5794e/Y5794E04.htm":www.fao.org/docrep/008/y5794e/Y5794E04.htm
