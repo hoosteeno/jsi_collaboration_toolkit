@@ -8,6 +8,7 @@ $yellow: #FEDF9A;
 $purple: #9E2076;
 $light-gray: #e1e1e1;
 $light-blue: #224B89;
+$pale-blue: #EBF3FD;
 $dark-blue: #166E9B;
 
 // Rules
@@ -194,7 +195,7 @@ ul.alternating {
       background: $light-gray;
     }
     &:nth-child(odd) {
-      background: $yellow;
+      background: $pale-blue;
     }
   }
 }
@@ -205,7 +206,7 @@ ul.alternating.reverse {
       background: $light-gray;
     }
     &:nth-child(even) {
-      background: $yellow;
+      background: $pale-blue;
     }
   }
 }
@@ -216,7 +217,7 @@ ul.chunky {
     width: 100%;
     li {
       margin: 0 0 10px 0;
-      background: $yellow;
+      background: $pale-blue;
       color: #000;
       list-style-type: none;
       margin-bottom: 10px;
@@ -248,7 +249,7 @@ ul.chunky {
   dd, p, ul {
     margin: 0;
     padding: 10px 13px 10px 10px;
-    background: #ebf3fd;
+    background: $pale-blue;
     font-size: 14px;
   }
   ul {
