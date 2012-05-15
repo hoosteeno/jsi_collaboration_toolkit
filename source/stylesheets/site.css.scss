@@ -175,15 +175,9 @@ img {
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
-}
-
-
-.outlined {
-    padding: 10px 10px 10px 30px;
-    border: dotted 1px $purple;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    border-radius: 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul.alternating {
