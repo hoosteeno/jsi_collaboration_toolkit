@@ -2,7 +2,8 @@
   layout: one_col
   content: |
     <dl class="gloss tk-proxima-nova">
-      <dt>Key Term: Community Assets</dt>
+      <dt>Key Term:
+      Community Assets</dt>
       <dd>Anything that is used to improve the quality of community life.</dd>
     </dl>
 
