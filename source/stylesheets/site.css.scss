@@ -4,8 +4,19 @@
 
 // Variables
 
+$yellow: #FEDF9A;
+$purple: #9E2076;
+$light-gray: #e1e1e1;
+$light-blue: #224B89;
+$pale-blue: #EBF3FD;
+$dark-blue: #166E9B;
 
 // Rules
+
+img {
+  display: block;
+  margin: 0 auto;
+}
 
 .entry-content {
   ul {
@@ -112,6 +123,12 @@
             color: white;
           }
         }
+        .footnotes {
+          border-top: 1px dotted #eee;
+          padding-top: 2em;
+          padding-left: 2em;
+          font-size: .8em;
+        }
       }
     }
     .ui-tabs-hide {
@@ -151,6 +168,65 @@
   }
 }
 
+.pull-quote {
+  font-size: 1.1em;
+  padding: 10px 10px 10px 30px;
+  background: $dark-blue;
+  color: #fff;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul.alternating {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    padding: 5px;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    &:nth-child(even) {
+      background: $light-gray;
+    }
+    &:nth-child(odd) {
+      background: $pale-blue;
+    }
+  }
+}
+
+ul.alternating.reverse {
+  li {
+    &:nth-child(odd) {
+      background: $light-gray;
+    }
+    &:nth-child(even) {
+      background: $pale-blue;
+    }
+  }
+}
+
+ul.chunky {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    li {
+      margin: 0 0 10px 0;
+      background: $pale-blue;
+      color: #000;
+      list-style-type: none;
+      margin-bottom: 10px;
+      padding: 5px;
+      -webkit-border-radius: 0.5em;
+      -moz-border-radius: 0.5em;
+      border-radius: 0.5em;
+    } 
+}
 
 // Gloss module (drop class on DIV or DL)
 .gloss {
@@ -173,7 +249,7 @@
   dd, p, ul {
     margin: 0;
     padding: 10px 13px 10px 10px;
-    background: #ebf3fd;
+    background: $pale-blue;
     font-size: 14px;
   }
   ul {
