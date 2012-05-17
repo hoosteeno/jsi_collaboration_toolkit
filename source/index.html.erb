@@ -21,8 +21,9 @@
 
           <ul class="chapter-nav ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
             <% data.chapters.each_with_index do |chapter, chapter_index| %>
+              <% rows = chapter_index.to_s %>
               <li>
-                <a href="#chapter<%= chapter_index %>"><%= chapter.title %></a>
+                <a href="#chapter-<%= rows %>"><%= chapter.title %></a>
               </li>
             <% end %>
           </ul>
@@ -30,7 +31,7 @@
           <% data.chapters.each_with_index do |chapter, chapter_index| %>
             <% rows = chapter_index.to_s %>
 
-            <div id="chapter<%= chapter_index %>" class="tab">
+            <div id="chapter-<%= rows %>" class="tab">
 
               <h1 class="tk-proxima-nova">
                 <%= chapter.title %><% if chapter.subtitle %>: <%= chapter.subtitle %><% end %>
@@ -41,7 +42,8 @@
                 <ul class="section-nav clearfix">
                 <% chapter.sections.each_with_index do |section, section_index| %>
                   <% section_index = section_index + 1 %>
-                  <li><a href="#section<%= section_index %>"><%= section.title %></a></li>
+                  <% rows = chapter_index.to_s + '-' + section_index.to_s %>
+                  <li><a href="#section-<%= rows %>"><%= section.title %></a></li>
                 <% end %>
                 </ul>
 
@@ -49,7 +51,7 @@
                   <% section_index = section_index + 1 %>
                   <% rows = chapter_index.to_s + '-' + section_index.to_s %>
 
-                  <div id="section<%= section_index %>" class="tab ui-tabs-panel">
+                  <div id="section-<%= rows %>" class="tab ui-tabs-panel">
                     <div class="pad">
                       <div class="row-fluid">
 
@@ -59,17 +61,16 @@
                           <ul>
                           <% section.subsections.each_with_index do |subsection, subsection_index| %>
                             <% subsection_index = subsection_index + 1 %>
-                            <li><a href="#subsection<%= subsection_index %>"><%= subsection.title %></a></li>
+                            <% rows = chapter_index.to_s + '-' + section_index.to_s + '-' + subsection_index.to_s %>
+                            <li><a href="#subsection-<%= rows %>"><%= subsection.title %></a></li>
                           <% end %>
                           </ul>
 
-                          <% 
-                            section.subsections.each_with_index do |subsection, subsection_index| 
-                              subsection_index = subsection_index + 1 
-                              rows = chapter_index.to_s + '-' + section_index.to_s + '-' + subsection_index.to_s 
-                          %>
+                          <% section.subsections.each_with_index do |subsection, subsection_index| %>
+                            <% subsection_index = subsection_index + 1 %>
+                            <% rows = chapter_index.to_s + '-' + section_index.to_s + '-' + subsection_index.to_s %>
 
-                            <div id="subsection<%= subsection_index %>" class="tab ui-tabs-panel">
+                            <div id="subsection-<%= rows %>" class="tab ui-tabs-panel">
 
                             <%= partial(:rows, :locals => { :rows => rows }) %>
 

@@ -47,12 +47,9 @@
   sections:
     -
       title: Summary
-      subsections:
-        -
-          title: 
     -
       title: Performing Assessments
-      subsections: 
+      subsections:
         -
           title: Community Assessments
         - 
@@ -77,15 +74,13 @@
           title: Performing a Community Assessment
         -
           title: Leveraging Community Assets
+
 -
   title: Chapter 3
   subtitle: Crafting Clear Communications
   sections:
     -
       title: Summary
-      subsections:
-        -
-          title: 
     -
       title: Steps to Crafting Clear Communications
       subsections:
@@ -108,14 +103,15 @@
       subsections:
         -
           title: Crafting Clear Communications
-        -
+        - 
           title: Identifying the Purpose
         -
           title: Choosing Your Audience
-        -
+        - 
           title: Crafting the Message
         -
           title: Tailor Your Message to Your Medium
+
 -
   title: Conclusion &amp; Sources
   subtitle: 

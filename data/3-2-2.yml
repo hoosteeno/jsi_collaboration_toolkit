@@ -1,45 +1,50 @@
 -
-  layout: one_col
+  layout: one_col_with_gloss
+  content: 
+    gloss: |
+      Knowing your audience makes it possible to plan your communication logically. 
+
+    main: |
+      h4. Choose Your Audience
+
+      Knowing your audience makes it possible to plan your communication logically.  First, choose which key audience your message will focus on. You’ll need different messages for different groups and different channels and methods to reach each of those groups.  Next, consider whether you should direct your communication to those whose behavior, knowledge, or condition you hope to affect, or whether your communication needs to be indirect.  Sometimes, for instance, in order to influence a population, you have to aim your message at those to whom they listen – clergy, community leaders, politicians, etc.  Sometimes policy makers are the appropriate target, rather than those who are directly affected.  These are only a few of the many possible ways to identify your audience.  Once you’ve done that, it will give your organization ideas about how to reach them.
+      
+      Persons who create policy, fund, develop and run programs and services for teen pregnancy prevention and pregnant and parenting adolescents each brings to the table their own approach and reason for their efforts that is a reflection of how they listen to, learn from and eventually act upon messages they hear. Attention to how and why your audience listens and learn is called "andragogy" and was introduced and advanced in the United States by Malcolm Knowles (‘andragogical model of learning’ a model of human learning, 1990).  As noted by Lawson (2009) this model is based on five assumptions that should be considered as you plan and execute your communication strategy(ies):
+
+      The first assumption involves a change in self-concept from total dependency to increasing self-directedness. Because your partners are more likely to be self-directed, and would want to take responsibility for planning, implementing, and evaluating the message, you should establish that the information provided is a collaborative effort. Throughout the communication process, you should be engaged with partners in ongoing, two-way communication that will allow them to adopt and adapt the message that best fits them and their intended audience.
+
+      The second assumption addresses the role of experience. Each partner or audience member brings a wealth of experiences that provide a base for hearing and using a targeted communication. Finding out what your audience already knows and how your communication will be perceived to help them build on their experiences will facilitate adoption. Use of the tools Identify Your Target Audience and Create a Profile for Your Target Audience on page 56 and 57, as well as your own (your team’s) experience can assist you in this discovery effort.
+
+      The third assumption is that your audience is ready to listen and learn when they perceive they need to know or do something in order to perform more effectively in some aspect of the execution of their work. That is, they are more likely to listen and learn from the message if it is practical and realistic, problem-centered rather than subject-centered (e.g., just on pregnant and parenting teens or just on father involvement). The effective message helps your audience understand how integration of the message can lead to learning a particular skill or task that will help them be more successful in their work.
+
+      The fourth assumption is that your target audience(s) is most likely to listen to a message that has immediate, real-world applications. Practitioners are very much real time learners and users of information. They want information that can lead to obtaining skills and knowledge that will help them solve problems or complete tasks. People working in this field are motivated to listen and assimilate information when they see relevance to their real-life situations and are able to apply what they have learned as quickly as possible. Therefore, messages need to be clearly relevant to the immediate needs of the audience. Here both the Crafting Clear Communications Checklist on Page 58 and Message Development on Page 59 can be effective in assisting you in crafting just-in-time messages that emphasize how the message is going to make the audience member’s jobs easier.
+
+-
+  layout: one_col_with_gloss
+  content:
+    gloss: |
+      There are four types of learners: feelers, observers, thinkers, and doers. 
+
+    main: |
+      The fifth and last assumption is that audiences are motivated to listen and learn because of internal factors such as self-esteem, greater self-confidence in their own knowledge and skills and opportunities to improve their own worth. Messages must allow the audience member to perceive a personal benefit.
+    
+      In addition, in crafting and targeting your message it is critical that you have rudimentary understanding of your audience’s learning style. Learning style refers to the way in which an audience member approaches and responds to a message and learning experience. Larson (2009), based on the work of Jacobs and Fuhrmann (1984), suggest there are four types of learners:
+
+      a) Feelers are very people-oriented, expressive and focus on feelings and emotions and gravitate toward learning experiences that explore people's attitudes and emotions so they are more likely to benefit from communications that give them the opportunity to interact, share opinions and experiences;
+
+      b) Observers are more likely to watch and listen, be reserved and quiet and will take their time before responding to or acting upon what they hear – however, when they do respond or act they are generally right on target. They are more likely to benefit from communication experiences that allow them to consider various ideas and opinions, and they seem to thrive on messages that are more open and allow them to learn through discovery;
+
+      c) Thinkers are persons who rely on logic and reason as well as the opportunity to share ideas and concepts and prefer messages that challenge them to analyze and evaluate what is being communicated, so like Feelers they appreciate interactive communication, especially an approach that allows them to question the rationale behind what is presented. They are more likely to challenge messages they perceive to be too general or without substance; and
+
+      d) Doers have a learning style that is very common in this field since they are likely to be persons who want to actively be involved in the message development and delivery process, they want to take charge of the message and they are particularly interested in knowing how they are going to apply what is being communicated to their and other real world situations – so they like information that is presented clearly and concisely and will become impatient with messages that provide ‘additional’ or broad audience-focused information.
+
+      Keep in mind that no one learning style is right or even better than another. To be effective, you must design and target communication strategy to accommodate style differences.
+
+      Please note:  These five assumptions and understanding of how your audience learns are also true as you plan your outreach strategy. ^[i]^
+
+      The worksheets titled Learning Style Inventory in the Resources section of this chapter can guide you through this process.
+
+-
+  layout: footnotes
   content: |
-    h4. Choose Your Audience
-
-    <div class="gloss">
-    Knowing your audience makes it possible to plan your communication logically. 
-    </div>
-    
-    Knowing your audience makes it possible to plan your communication logically.  First, choose which key audience your message will focus on. You’ll need different messages for different groups and different channels and methods to reach each of those groups.  Next, consider whether you should direct your communication to those whose behavior, knowledge, or condition you hope to affect, or whether your communication needs to be indirect.  Sometimes, for instance, in order to influence a population, you have to aim your message at those to whom they listen – clergy, community leaders, politicians, etc.  Sometimes policy makers are the appropriate target, rather than those who are directly affected.  These are only a few of the many possible ways to identify your audience.  Once you’ve done that, it will give your organization ideas about how to reach them.
-    
-    Persons who create policy, fund, develop and run programs and services for teen pregnancy prevention and pregnant and parenting adolescents each brings to the table their own approach and reason for their efforts that is a reflection of how they listen to, learn from and eventually act upon messages they hear. Attention to how and why your audience listens and learn is called "andragogy" and was introduced and advanced in the United States by Malcolm Knowles (‘andragogical model of learning’ a model of human learning, 1990).  As noted by Lawson (2009) this model is based on five assumptions that should be considered as you plan and execute your communication strategy(ies):
-
-    The first assumption involves a change in self-concept from total dependency to increasing self-directedness. Because your partners are more likely to be self-directed, and would want to take responsibility for planning, implementing, and evaluating the message, you should establish that the information provided is a collaborative effort. Throughout the communication process, you should be engaged with partners in ongoing, two-way communication that will allow them to adopt and adapt the message that best fits them and their intended audience.
-
-    The second assumption addresses the role of experience. Each partner or audience member brings a wealth of experiences that provide a base for hearing and using a targeted communication. Finding out what your audience already knows and how your communication will be perceived to help them build on their experiences will facilitate adoption. Use of the tools Identify Your Target Audience and Create a Profile for Your Target Audience on page 56 and 57, as well as your own (your team’s) experience can assist you in this discovery effort.
-
-    The third assumption is that your audience is ready to listen and learn when they perceive they need to know or do something in order to perform more effectively in some aspect of the execution of their work. That is, they are more likely to listen and learn from the message if it is practical and realistic, problem-centered rather than subject-centered (e.g., just on pregnant and parenting teens or just on father involvement). The effective message helps your audience understand how integration of the message can lead to learning a particular skill or task that will help them be more successful in their work.
-
-    The fourth assumption is that your target audience(s) is most likely to listen to a message that has immediate, real-world applications. Practitioners are very much real time learners and users of information. They want information that can lead to obtaining skills and knowledge that will help them solve problems or complete tasks. People working in this field are motivated to listen and assimilate information when they see relevance to their real-life situations and are able to apply what they have learned as quickly as possible. Therefore, messages need to be clearly relevant to the immediate needs of the audience. Here both the Crafting Clear Communications Checklist on Page 58 and Message Development on Page 59 can be effective in assisting you in crafting just-in-time messages that emphasize how the message is going to make the audience member’s jobs easier.
-
-    The fifth and last assumption is that audiences are motivated to listen and learn because of internal factors such as self-esteem, greater self-confidence in their own knowledge and skills and opportunities to improve their own worth. Messages must allow the audience member to perceive a personal benefit.
-    
-    <div class="gloss">
-    There are four types of learners: feelers, observers, thinkers, and doers. 
-    </div>
-    
-    In addition, in crafting and targeting your message it is critical that you have rudimentary understanding of your audience’s learning style. Learning style refers to the way in which an audience member approaches and responds to a message and learning experience. Larson (2009), based on the work of Jacobs and Fuhrmann (1984), suggest there are four types of learners:
-
-    a) Feelers are very people-oriented, expressive and focus on feelings and emotions and gravitate toward learning experiences that explore people's attitudes and emotions so they are more likely to benefit from communications that give them the opportunity to interact, share opinions and experiences;
-
-    b) Observers are more likely to watch and listen, be reserved and quiet and will take their time before responding to or acting upon what they hear – however, when they do respond or act they are generally right on target. They are more likely to benefit from communication experiences that allow them to consider various ideas and opinions, and they seem to thrive on messages that are more open and allow them to learn through discovery;
-
-    c) Thinkers are persons who rely on logic and reason as well as the opportunity to share ideas and concepts and prefer messages that challenge them to analyze and evaluate what is being communicated, so like Feelers they appreciate interactive communication, especially an approach that allows them to question the rationale behind what is presented. They are more likely to challenge messages they perceive to be too general or without substance; and
-
-    d) Doers have a learning style that is very common in this field since they are likely to be persons who want to actively be involved in the message development and delivery process, they want to take charge of the message and they are particularly interested in knowing how they are going to apply what is being communicated to their and other real world situations – so they like information that is presented clearly and concisely and will become impatient with messages that provide ‘additional’ or broad audience-focused information.
-
-    Keep in mind that no one learning style is right or even better than another. To be effective, you must design and target communication strategy to accommodate style differences.
-
-    Please note:  These five assumptions and understanding of how your audience learns are also true as you plan your outreach strategy.[i]
-
-    The worksheets titled Learning Style Inventory in the Resources section of this chapter can guide you through this process.
-
-    Footnotes:
     [i] Lawson, K (2009) The Trainer’s Handbook, 3rd Updated Edition,  Pfeiffer An Imprint of Wiley; San Francisco, CA; Jacobs, R. T. & Fuhrmann, B.S. (1984). Learning Style Inventory. In J.W. Pfeiffer & L.D. Goodstein (Eds.), The 1984 annual for group facilitators. San Francisco: Jossey-Bass/Pfeiffer.); Knowles, M (1990)  The Adult Learner: A Neglected Species (Building Blocks of Human Potential)  Gulf Publishing Co; Houston, TX

@@ -4,7 +4,7 @@
                                 <% data.send(rows).each_with_index do |row, row_index| %>
                                   <% row_index = row_index + 1 %>    
                                   <% row_id = rows + "-" + row_index.to_s %>
-                                  <div class="row-fluid" id="<%= row_id %>">
+                                  <div class="row-fluid" id="<%= rows %>">
 
                                     <% if row.layout %>
                                       <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
