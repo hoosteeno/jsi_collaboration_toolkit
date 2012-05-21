@@ -69,13 +69,13 @@ helpers do
 end
 
 # Change the CSS directory
-# set :css_dir, "alternative_css_directory"
+set :css_dir, "/ash/oah/css/"
 
 # Change the JS directory
-# set :js_dir, "alternative_js_directory"
+set :js_dir, "/ash/oah/javascripts/"
 
 # Change the images directory
-# set :images_dir, "alternative_image_directory"
+set :images_dir, "/ash/oah/oah-initiatives/images/"
 
 # Build-specific configuration
 configure :build do
@@ -89,7 +89,7 @@ configure :build do
    activate :cache_buster
   
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
   
   # Compress PNGs after build
   # First: gem install middleman-smusher
@@ -97,7 +97,7 @@ configure :build do
   # activate :smusher
   
   # Or use a different image path
-  # set :http_path, "/Content/images/"
+  set :http_path, "/ash/oah/oah-initiatives/images/"
 end
 
 activate :directory_indexes
