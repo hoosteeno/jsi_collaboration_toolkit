@@ -35,7 +35,7 @@ GEM
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
     i18n (0.6.0)
-    map (5.7.0)
+    map (5.8.0)
     maruku (0.6.0)
       syntax (>= 1.0.0)
     middleman (2.0.15.3)
@@ -108,7 +108,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
-  map
+  map (>= 5.7)
   middleman (>= 2)
   rb-fsevent
   tagz

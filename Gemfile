@@ -8,5 +8,5 @@ gem "rb-fsevent"
 
 gem "tagz"
 
-gem "map"
+gem "map", ">= 5.7"
 gem "RedCloth"
