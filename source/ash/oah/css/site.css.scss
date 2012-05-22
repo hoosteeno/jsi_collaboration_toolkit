@@ -171,7 +171,7 @@ img {
 
 .pull-quote {
   font-size: 1.1em;
-  margin: 0;
+  margin: 20px 0;
   padding: 15px;
   background: $dark-blue;
   color: #fff;
@@ -215,11 +215,10 @@ ul.alternating.reverse {
     padding: 0;
     width: 100%;
     li {
-      margin: 0 0 10px 0;
+      margin: 10px;
+      padding: 10px;
       background: $pale-blue;
       list-style-type: none;
-      margin-bottom: 10px;
-      padding: 5px;
       -webkit-border-radius: 0.5em;
       -moz-border-radius: 0.5em;
       border-radius: 0.5em;
