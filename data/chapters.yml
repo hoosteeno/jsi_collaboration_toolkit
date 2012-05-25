@@ -1,5 +1,6 @@
 -
   title: Introduction
+  icon: '&#58432;'
   subtitle: 
   sections:
     -
@@ -7,6 +8,7 @@
 
 -
   title: Chapter 1
+  icon: '&#58414;'
   subtitle: Building Strategic Partnerships
   sections:
     -
@@ -43,6 +45,7 @@
 
 -
   title: Chapter 2
+  icon: '&#58420;'
   subtitle: Effective Outreach Strategies
   sections:
     -
@@ -77,6 +80,7 @@
 
 -
   title: Chapter 3
+  icon: '&#58424;'
   subtitle: Crafting Clear Communications
   sections:
     -
@@ -114,6 +118,7 @@
 
 -
   title: Conclusion &amp; Sources
+  icon: '&#58430;'
   subtitle: 
   sections:
     -

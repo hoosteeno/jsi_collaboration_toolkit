@@ -2,6 +2,18 @@
 @import "bootstrap-responsive.css";
 @import "existing.css";
 
+@font-face {
+    font-family: 'dojofore';
+    src: url('/ash/oah/css/dojofore-regular-webfont.eot');
+    src: url('/ash/oah/css/dojofore-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/ash/oah/css/dojofore-regular-webfont.woff') format('woff'),
+         url('/ash/oah/css/dojofore-regular-webfont.ttf') format('truetype'),
+         url('/ash/oah/css/dojofore-regular-webfont.svg#dojoforeRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 // Variables
 
 $yellow: #FEDF9A;
@@ -13,6 +25,10 @@ $dark-blue: #166E9B;
 
 // Rules
 
+i.dojofore {
+  font-family: 'dojofore';
+}
+
 img {
   display: block;
   margin: 0 auto;
@@ -20,6 +36,34 @@ img {
 
 
 .entry-content {
+  i.dojofore {
+    padding: 0;
+    margin: 0;
+    display: block;
+    font-size: 200px;
+    height: 100px;
+    line-height: 60px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  h1.chapter-title {
+    font-size: 2.5em;
+    line-height: 100px;
+    height: 100px;
+    position: relative;
+    strong {
+      font-weight: bolder;
+    }
+    i {
+      position: relative;
+      top: 19px;
+      margin-right: 10px;
+      font-style: none;
+      font-size: 100px;
+      font-family: 'dojofore';
+    }
+  }
   ul {
     &.chapter-nav {
       list-style: none;
