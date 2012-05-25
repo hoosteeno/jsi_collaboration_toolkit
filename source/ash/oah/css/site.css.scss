@@ -21,6 +21,7 @@ $light-gray: #e1e1e1;
 $light-blue: #224B89;
 $pale-blue: #EBF3FD;
 $dark-blue: #166E9B;
+$blackish: #4c4c4c;
 
 // Rules
 
@@ -66,7 +67,8 @@ img {
     display: block;
     text-align: center;
   }
-  h1.chapter-title {
+  h2.chapter-title {
+    color: $blackish;
     font-size: 2.5em;
     line-height: 100px;
     height: 100px;
@@ -74,7 +76,7 @@ img {
     strong {
       font-weight: bolder;
     }
-    i {
+    span {
       position: relative;
       top: 19px;
       margin-right: 10px;
