@@ -151,7 +151,8 @@ img {
           }
         }
         &.ui-tabs-selected a {
-          background: white;
+          background: #fff;
+          filter: none;
         }
       }
     }
