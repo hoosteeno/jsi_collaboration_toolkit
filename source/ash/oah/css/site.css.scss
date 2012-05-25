@@ -11,7 +11,6 @@
          url('/ash/oah/css/dojofore-regular-webfont.svg#dojoforeRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 // Variables
@@ -25,7 +24,7 @@ $dark-blue: #166E9B;
 
 // Rules
 
-i.dojofore {
+.dojofore {
   font-family: 'dojofore';
 }
 
@@ -36,16 +35,26 @@ img {
 
 
 .entry-content {
-  i.dojofore {
+  .dojofore {
     padding: 0;
     margin: 0;
-    display: block;
+    font-size: 100px;
+  }
+  .dojofore.big {
     font-size: 200px;
     height: 100px;
-    line-height: 60px;
-    position: relative;
+    line-height: 100px;
+  }
+  .dojofore.left {
+    display: block;
+    float:left;
+  }
+  .dojofore.blue {
+    color: $dark-blue;
+  }
+  .dojofore.center {
+    display: block;
     text-align: center;
-    overflow: hidden;
   }
   h1.chapter-title {
     font-size: 2.5em;
