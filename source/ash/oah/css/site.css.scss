@@ -39,11 +39,18 @@ img {
     padding: 0;
     margin: 0;
     font-size: 100px;
+    height: 50px;
+    line-height: 60px;
   }
   .dojofore.big {
     font-size: 200px;
     height: 100px;
     line-height: 100px;
+  }
+  .dojofore.giant {
+    font-size: 400px;
+    height: 200px;
+    line-height: 200px;
   }
   .dojofore.left {
     display: block;
@@ -51,6 +58,9 @@ img {
   }
   .dojofore.blue {
     color: $dark-blue;
+  }
+  .dojofore.purple {
+    color: $purple;
   }
   .dojofore.center {
     display: block;
