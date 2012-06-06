@@ -1,3 +1,4 @@
+
         <div id="breadcrumbs">
           <ol>
             <li><a href="/ash/oah/oah-initiatives/index.html">OAH Initiatives</a></li>
@@ -70,10 +71,18 @@
                             <% subsection_index = subsection_index + 1 %>
                             <% rows = chapter_index.to_s + '-' + section_index.to_s + '-' + subsection_index.to_s %>
 
+
                             <div id="subsection-<%= rows %>" class="tab ui-tabs-panel">
 
                             <%= partial(:rows, :locals => { :rows => rows }) %>
-
+<% if false %>
+                              <ul class="row-fluid next-prev-tab">
+                                <% unless subsection_index == 1 %>
+                                  <li class="prev-link pull-left"><a href="#subsection-<%= previous_link %>">previous</a></li>
+                                <% end %>
+                                  <li class="next-link pull-right"><a href="#subsection-<%= next_link %>">next <%= subsection_index %></a></li>
+                              </ul>
+<% end %>
                             </div><!-- eo #subsection<%= subsection_index %> -->
                           <% end %>
 

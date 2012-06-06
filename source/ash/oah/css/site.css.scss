@@ -294,19 +294,27 @@ ul.alternating.reverse {
 .border-top {
    border-top: 1px dotted #eee;
 }
-  
+
+dt {
+  margin: 1.5em 0 0 0;
+  line-height: 0.8;
+}
+dd {
+  margin: 0.5em 0 0 0.75em;
+}
 
 // Gloss module (drop class on DIV or DL)
 .gloss {
-  dl, dt {
-    font-weight: normal;
-  }
   width: 30%;
   float: right;
   margin: 0 0 20px 20px;
   padding: 0;
   border-right: 3px solid #166E9B;
+  dl, dt {
+    font-weight: normal;
+  }
   dt, h4 {
+    margin: 0 0 1.2em;
     padding: 0 13px 0 10px;
     font-size: 22px;
     color: #166E9B;
