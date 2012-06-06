@@ -1,7 +1,10 @@
 -
   layout: one_col_with_gloss
   content: 
+
     gloss: |
+      h4(tk-proxima-nova). Audience Assessment
+
       As you craft your message, think about who you want to communicate with and understand what motivates them to listen and act on your message.
       %(dojofore big blue center)&#58429;%
 
@@ -22,7 +25,10 @@
 -
   layout: one_col_with_gloss
   content:
+
     gloss: |
+      h4(tk-proxima-nova). 4 Types of Learners
+
       There are four types of learners: feelers, observers, thinkers, and doers. 
 
     main: |

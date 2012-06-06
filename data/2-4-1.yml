@@ -1,7 +1,10 @@
 -
   layout: one_col_with_gloss
   content: 
+
     gloss: |
+      h4(tk-proxima-nova). Strategic Communication
+
       Integrated, orchestrated, and ongoing outreach can persuade your audience to engage with your mission.
 
     main: |

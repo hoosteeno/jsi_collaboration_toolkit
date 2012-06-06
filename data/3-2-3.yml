@@ -2,6 +2,8 @@
   layout: one_col_with_gloss
   content: 
     gloss: |
+      h4(tk-proxima-nova). Content & Style
+      
       %(dojofore big blue center)&#58405;% You communicate with content &mdash; but also with style, structure, tone, and more. You can improve the success of your message by considering all aspects when crafting communications.
   
 

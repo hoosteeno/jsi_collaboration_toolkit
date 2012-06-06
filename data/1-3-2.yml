@@ -1,8 +1,12 @@
 -
   layout: one_col_with_gloss
   content: 
+
     gloss: |
+      h4(tk-proxima-nova). Finding Mutual Gain
+
       Principled negotiation is founded on finding solutions for mutual gain.
+
     main: |
       h4. Negotiating a Partnership Agreement
 

@@ -1,7 +1,10 @@
 -
   layout: one_col_with_gloss
   content:
+
     gloss: |
+      h4(tk-proxima-nova). Are You Ready?
+
       The first step in pursuing a strategic partnership is to know your own organization’s strengths and weaknesses. %(big dojofore center)&#58403;% 
     main: |
       h4. Readiness for Partnering and Identifying Prospective Partners
