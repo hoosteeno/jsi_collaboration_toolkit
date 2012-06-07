@@ -1,18 +1,63 @@
--
-  layout: one_col
-  content:
-    h4. Tailor Your Message According To Your Medium
+
 
 -
-  layout: two_col
+  layout: one_col_with_gloss
   content: 
-    column1: |
+    gloss: |
+      h4(tk-proxima-nova). Content & Style
+      
+      %(dojofore big blue center)&#58405;% You communicate with content &mdash; but also with style, structure, tone, and more. You can improve the success of your message by considering all aspects when crafting communications.
+  
 
-      %(dojofore big blue left)&#58419;% Channels of communication relate to the medium through which you convey your key messages.  There are numerous channels to choose from in order to reach your target audience depending on what the members of your audience read, listen to, watch, and engage in.  It is critical that your organization understand what works effectively with different audiences.  The "Communications Channels worksheet":downloads/3-3-7_Communications_Channels.pdf will help you brainstorm and provide ideas for potential communications channels.
+    main: |
+      h4. Craft Your Message
 
-      The individuals that can help you spread your message can vary and include community leaders, elected officials, CEOs of local businesses, clergy, community activists and ordinary people who are nonetheless respected and listened to by their neighbors.  Institutions and organizations, such as colleges, hospitals, service clubs, faith communities, and other health and community organizations all have access to groups of community members who might need to hear your message.
+      Your message may be one of inspiration, pure information, education, persuasion, request, and/or explanation.  It can vary in content, mood, language, and design.  The possibilities are:
 
-    column2: |
-      As mentioned in Chapters I and II, developing ways of contacting and establishing relationships with influential individuals and institutions in the community and/or the population you are trying to reach is an important part of your outreach plan.  You have to make personal contacts, give the media and others reasons to want to help you, and follow through over time to sustain those relationships in order to keep communication channels open.
+      <i class="icon-edit"></i> *Content*. Planning the content of your message is necessary to making it effective.  Your message will be very different if you are recruiting participants than if you are trying to rally the public, or if you are trying to convince a population at risk to change their habits.
 
-      The "Checklist for Effective Brochures":downloads/3-3-8_Checklist_for_Effective_Brochures.pdf and "Characteristics of Quality Educational and Promotional Materials":downloads/3-3-9_Characteristics_of_Quality_Educational_and_Promotional_Materials.pdf tools will help your organization ensure that the materials being produced are effective.  Remember that your organization offers a unique benefit to the community that no other organization can claim.  If you keep this in the front of your mind as you develop your message, you will have great success in reaching those who can help you fulfill your mission. 
+      The "Suggested Messaging tool":downloads/3-3-6_Suggested_Messaging.pdf can guide your organization through the process of crafting your message.
+
+      <i class="icon-edit"></i> *Mood*. Consider what emotions do you want to appeal to? Your message may be upbeat &mdash; "Look at all the wonderful things our participants have accomplished!" Your message may be angry &mdash; "We're tired of seeing our community's educational attainment decline, and we're not going to stand for it anymore."  Your message may be determined &mdash; "It's time to roll up our sleeves and make teen pregnancy a thing of the past in our community."
+
+      The mood of your message will determine how people react to it.  In general, if the mood is too extreme (too negative, too frightening, or tries to make your audience feel too guilty), people will not pay much attention to it.  It may take some experience to learn how to strike the right balance.
+
+      !(left)/ash/oah/oah-initiatives/images/mood_3-2-4.jpg!
+      Recently, foundations, government agencies, and public officials have been making use of research and outcomes measurement to determine the effectiveness of programs.  This has led to a shift in targeting funds and support toward effective programs and organizations that are measurably improving the communities they serve. Therefore, it would be prudent to include evidence-based goals and outcomes in your organization's messaging (i.e., "70% of program graduates complete their high school degree compared to 25% of adolescent mothers nationally.")
+
+      Focusing your message to potential funders, community influencers and other stakeholders on the negative perceptions related to adolescent pregnancy is risky.  Rather, consider approaching your message from a positive angle and highlight solutions that such partners can help you achieve.  Recognize the potential, capabilities, and contributions of pregnant and parenting adolescents in the community instead of overemphasizing their liabilities, deficits and needs; this is a much more effective way to mobilize them into action.
+
+      Consider using personal stories, case studies and real-life examples.  Support these with facts and data to help your intended audience see how you are making a difference in the community.  Clients who have successfully completed your program can also be great communicators of your message.  Training them with some basic public speaking skills can benefit you and also give them a leg up for the future.
+
+      <i class="icon-edit"></i> *Language and styles of communication*.  Different audiences will require different communication styles.  It is important for your organization to consider your audience's perception of your motives.
+
+      There are two aspects to language: one is the actual language &mdash; English, Spanish, Korean, etc. &mdash; that your intended audience speaks; the other is the kind of language you use &mdash; formal or informal, simple or complex, referring to popular figures and ideas or to obscure ones.  You can address the language people speak by presenting your communications in both the official language (English in the U.S.) and the spoken language(s) of the population(s) you are hoping to reach.
+
+      The second aspect, the kind of language you use in your messaging, can be more complicated.  If your message is too informal, your audience might feel you are talking down to them, or, worse, that you are making an insincere attempt to get close to them by communicating in a way that is clearly not normal for you.  If your message is too formal &mdash; too stiff, too many "educated" words &mdash; your audience might feel you are not really talking to them at all.  You will usually do best by using plain, straightforward language that says what you want to say simply and clearly. ^[i]^
+
+      <div class="pull-quote">
+      When developing your message, consider the following:
+      * What is the primary language of the community? If English is not the primary language, how is communication translated?
+      * How does your target audience receive its information (Internet, newspapers, radio)?  Where do they access such information (libraries, schools, etc.)?  How often is this information accessed?
+      * How do they share information with each other?  
+      * How does the community discuss adolescent pregnancy issues? Do they discuss the issues at all?
+      * What are cultural norms that need to be considered?  Would a certain phrase be offensive?
+      </div>
+
+      Language and communication styles are especially important to consider as your organization reaches out to increasingly diverse communities.  Translating and pilot testing materials intended for non-English speakers is a good first step, but it is important that the staff also mirrors the population's cultural diversity.  It is essential that your organization have staff members who understand the language and cultural environment of each ethnic group in your target population, as well as the cultural skills to relate to your audience.  Especially as issues of sex and sexuality are considered taboo in many cultures, it is crucial that there are as few barriers between your organization and your intended audience as possible.
+
+      <i class="icon-edit"></i> *Consistency.*  To ensure a consistent message, review your organization's strategy and goals. If these are unclear, it will be more difficult to determine the right audience(s) to engage.  Both leadership and staff should work together to develop a clear and consistent message.
+
+      <div class="pull-quote">
+      Some tips on maintaining consistency:
+      * Select one or two messages and keep them simple (e.g., a message for clients and a             If you tailor the message to a specific audience, ensure that staff, board members and others working with your organization are promoting the same messages.
+      * Use the messages in all materials including: e-mail signatures, web sites, printed materials, etc. ^[ii]^
+      </div>
+
+-
+  layout: footnotes
+  content: |
+
+    [i] The Community Toolbox, Work Group for Community Health and Development at the University of Kansas. http://ctb.ku.edu/en/tablecontents/index.aspx
+
+    [ii] Building Partnerships Tool Kit. Region 8 Family Planning, www.region8familyplanning.org/index.htm
