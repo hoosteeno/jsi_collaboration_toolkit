@@ -240,6 +240,7 @@ img {
 // override subsection nav link styles for ch3.2
 .entry-content #section-3-2 #subsections .ui-tabs-nav {
   position: relative;
+  margin-bottom: 40px;
   *zoom: 1;
   *margin-left: .3em;
   &:before, &:after {
@@ -348,6 +349,10 @@ img {
       outline: 0;
     }
   }
+}
+// override spacing of H4 in ch3.2
+.entry-content #section-3-2 #subsections h4 {
+  margin: 0 0 10px;
 }
 
 
