@@ -91,9 +91,7 @@
         -
           title: "1"
         -
-          title: "2a"
-        -
-          title: "2b"
+          title: "2"
         -
           title: "3"
         -
@@ -102,6 +100,8 @@
           title: "5"
         -
           title: "6"
+        -
+          title: "7"
     -
       title: Resources
     -
