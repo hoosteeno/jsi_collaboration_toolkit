@@ -124,17 +124,17 @@
                             <ul class="row-fluid next_prev">
                               <% previous_nav = previous_navs.compact.last %>
                               <% unless previous_nav == nil %>
-                                <li class="prev-link">
-                                  <a href="<%= previous_nav %>">
-                                    previous
+                                <li class="prev-link pull-left">
+                                  <a href="<%= previous_nav %>" class="btn">
+                                    &laquo; previous
                                   </a>
                                 </li>
                               <% end %>
                               <% next_nav = next_navs.compact.last %>
                               <% unless next_nav == nil %>
-                                <li class="next-link">
-                                  <a href="<%= next_nav %>">
-                                    next
+                                <li class="next-link pull-right">
+                                  <a href="<%= next_nav %>" class="btn">
+                                    next &raquo;
                                   </a>
                                 </li>
                               <% end %>
@@ -149,17 +149,17 @@
                           <ul class="row-fluid next_prev">
                             <% previous_nav = previous_navs.compact.last %>
                             <% unless previous_nav == nil %>
-                              <li class="prev-link">
-                                <a href="<%= previous_nav %>">
-                                  previous
+                              <li class="prev-link pull-left">
+                                <a href="<%= previous_nav %>" class="btn">
+                                  &laquo; previous
                                 </a>
                               </li>
                             <% end %>
                             <% next_nav = next_navs.compact.last %>
                             <% unless next_nav == nil %>
-                              <li class="next-link">
-                                <a href="<%= next_nav %>">
-                                  next
+                              <li class="next-link pull-right">
+                                <a href="<%= next_nav %>" class="btn">
+                                  next &raquo;
                                 </a>
                               </li>
                             <% end %>

@@ -354,7 +354,16 @@ img {
 .entry-content #section-3-2 #subsections h4 {
   margin: 0 0 10px;
 }
-
+// next/previous links
+.next_prev {
+  width: auto;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  a {
+    color: #2a2a2a;
+  }
+}
 
 .pull-quote {
   font-size: 1.1em;
