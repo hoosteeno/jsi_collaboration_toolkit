@@ -59,6 +59,12 @@ jQuery(function(){
     go_to_deep_link();
   });
 
+  // scroll to the top with next/prev buttons
+  jq('.next_prev a').click(function(){
+    jq.scrollTo('#chapters', 600);
+    return true;
+  });
+
 });
 
 

@@ -16,7 +16,7 @@
         BELOW is dojo4-provided content; ABOVE is Trilogy template content
         -->
 
-        <%= javascript_include_tag 'application', 'jquery.ba-hashchange.min' %>
+        <%= javascript_include_tag 'jquery.scrollTo-1.4.2-min.js', 'application', 'jquery.ba-hashchange.min' %>
 
         <div id="chapters" class="tabs">
 
@@ -30,6 +30,21 @@
           </ul>
 
           <% data.chapters.each_with_index do |chapter, chapter_index| %>
+            <% 
+              previous_navs = [nil, nil, nil]
+              next_navs = [nil, nil, nil]
+            %>
+            <% 
+              # update previous_navs unless current is first
+              unless chapter_index == 0
+                previous_navs[0] = "#chapter-#{(chapter_index - 1).to_s}/"
+              end
+
+              # update next_navs unless current is last
+              unless chapter == data.chapters.last
+                next_navs[0] = "#chapter-#{(chapter_index + 1).to_s}/"
+              end
+            %>
             <% rows = chapter_index.to_s %>
 
             <div id="chapter-<%= rows %>" class="tab">
@@ -49,6 +64,21 @@
                 </ul>
 
                 <% chapter.sections.each_with_index do |section, section_index| %>
+                  <% 
+                    # update previous_navs unless current is first
+                    unless section_index == 0
+                      previous_navs[1] = "#chapter-#{(chapter_index)}/section-#{(chapter_index).to_s}-#{section_index.to_s}/"
+                    else
+                      previous_navs[1] = nil
+                    end
+
+                    # update next_navs unless current is last
+                    unless section == chapter.sections.last
+                      next_navs[1] = "#chapter-#{(chapter_index)}/section-#{(chapter_index).to_s}-#{(section_index + 2).to_s}/"
+                    else
+                      next_navs[1] = nil
+                    end
+                  %>
                   <% section_index = section_index + 1 %>
                   <% rows = chapter_index.to_s + '-' + section_index.to_s %>
 
@@ -68,6 +98,21 @@
                           </ul>
 
                           <% section.subsections.each_with_index do |subsection, subsection_index| %>
+                            <% 
+                              # update previous_navs unless current is first
+                              unless subsection_index == 0
+                                previous_navs[2] = "#chapter-#{(chapter_index)}/section-#{(chapter_index).to_s}-#{(section_index).to_s}/subsection-#{(chapter_index)}-#{(section_index)}-#{subsection_index}/"
+                              else
+                                previous_navs[2] = nil
+                              end
+
+                              # update next_navs unless current is last
+                              unless subsection == section.subsections.last
+                                next_navs[2] = "#chapter-#{(chapter_index)}/section-#{(chapter_index).to_s}-#{(section_index).to_s}/subsection-#{(chapter_index)}-#{(section_index)}-#{(subsection_index + 2)}/"
+                              else
+                                next_navs[2] = nil
+                              end
+                           %>
                             <% subsection_index = subsection_index + 1 %>
                             <% rows = chapter_index.to_s + '-' + section_index.to_s + '-' + subsection_index.to_s %>
 
@@ -75,23 +120,51 @@
                             <div id="subsection-<%= rows %>" class="tab ui-tabs-panel">
 
                             <%= partial(:rows, :locals => { :rows => rows }) %>
-<% if false %>
-                              <ul class="row-fluid next-prev-tab">
-                                <% unless subsection_index == 1 %>
-                                  <li class="prev-link pull-left"><a href="#subsection-<%= previous_link %>">previous</a></li>
-                                <% end %>
-                                  <li class="next-link pull-right"><a href="#subsection-<%= next_link %>">next <%= subsection_index %></a></li>
-                              </ul>
-<% end %>
+
+                            <ul class="row-fluid next_prev">
+                              <% previous_nav = previous_navs.compact.last %>
+                              <% unless previous_nav == nil %>
+                                <li class="prev-link">
+                                  <a href="<%= previous_nav %>">
+                                    previous
+                                  </a>
+                                </li>
+                              <% end %>
+                              <% next_nav = next_navs.compact.last %>
+                              <% unless next_nav == nil %>
+                                <li class="next-link">
+                                  <a href="<%= next_nav %>">
+                                    next
+                                  </a>
+                                </li>
+                              <% end %>
+                            </ul>
+
                             </div><!-- eo #subsection<%= subsection_index %> -->
                           <% end %>
 
                         </div><!-- eo #subsections -->
-                      <% 
-                        else 
-                          concat(partial(:rows, :locals => { :rows => rows })) 
-                        end 
-                      %>
+                      <% else %>
+                          <%= partial(:rows, :locals => { :rows => rows }) %>
+                          <ul class="row-fluid next_prev">
+                            <% previous_nav = previous_navs.compact.last %>
+                            <% unless previous_nav == nil %>
+                              <li class="prev-link">
+                                <a href="<%= previous_nav %>">
+                                  previous
+                                </a>
+                              </li>
+                            <% end %>
+                            <% next_nav = next_navs.compact.last %>
+                            <% unless next_nav == nil %>
+                              <li class="next-link">
+                                <a href="<%= next_nav %>">
+                                  next
+                                </a>
+                              </li>
+                            <% end %>
+                          </ul>
+                      <% end %>
 
                       </div><!-- eo .row-fluid -->
                     </div><!-- eo .pad -->
