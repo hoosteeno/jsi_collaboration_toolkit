@@ -576,6 +576,15 @@ dd {
   }
 }
 
+.assessment {
+  display: block;
+  margin: 0;
+  padding: 0;
+  float: left;
+  font: 100px/50px dojofore;
+  color: #f60;
+}
+
 
 .clearfix {
   &:before, &:after {
