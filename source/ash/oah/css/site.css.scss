@@ -365,6 +365,20 @@ img {
   }
 }
 
+.preface {
+  font-size: .9em;
+  margin: 20px 0;
+  padding: 15px;
+  background: $light-gray;
+  color: black;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .pull-quote {
   font-size: 1.1em;
   margin: 20px 0;
