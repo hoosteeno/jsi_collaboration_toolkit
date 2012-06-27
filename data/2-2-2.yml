@@ -3,10 +3,9 @@
   content: |
     h4. Formal/Informal Assessments
 
-    <div class='row-fluid'>
-        <p class='span6 pull-quote' style='height: 420px'>The *formal* approach to a community assessment entails review of data and statistics as well as potentially running your own survey of the community. While this can be costly, city and county health boards, school boards, and public health agencies often have some of this information publicly available.</p>
-        <p class='span6 pull-quote'>The *informal* approach to community assessments focuses on building relationships with other organizations in the community and pooling knowledge and insight. This includes connecting with those public agencies that have data publicly available as well as non-governmental organizations that have compiled their own statistics or could compare anecdotal information with you. Having a group of organizations pool information on their clients can result in a useful body of data that can guide coordinated program, funding, and outreach decisions.</p>
-    </div>
+    p(pull-quote). The *formal* approach to a community assessment entails review of data and statistics as well as potentially running your own survey of the community. While this can be costly, city and county health boards, school boards, and public health agencies often have some of this information publicly available.
+
+    p(pull-quote). The *informal* approach to community assessments focuses on building relationships with other organizations in the community and pooling knowledge and insight. This includes connecting with those public agencies that have data publicly available as well as non-governmental organizations that have compiled their own statistics or could compare anecdotal information with you. Having a group of organizations pool information on their clients can result in a useful body of data that can guide coordinated program, funding, and outreach decisions.
 
     Assessing this information can help you target your own survey to fill in any gaps.
 

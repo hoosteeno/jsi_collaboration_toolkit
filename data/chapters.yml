@@ -39,9 +39,9 @@
         -
           title: Successful Partnerships
     -
-      title: Resources
-    -
       title: Case Studies
+    -
+      title: Resources
 
 -
   title: Chapter 2
@@ -69,14 +69,14 @@
         -
           title: Objectives
     -
-      title: Resources
-    -
       title: Case Studies
       subsections:
         -
           title: Performing a Community Assessment
         -
           title: Leveraging Community Assets
+    -
+      title: Resources
 
 -
   title: Chapter 3
@@ -103,8 +103,6 @@
         -
           title: "7"
     -
-      title: Resources
-    -
       title: Case Studies
       subsections:
         -
@@ -117,6 +115,8 @@
           title: Crafting the Message
         -
           title: Tailor Your Message to Your Medium
+    -
+      title: Resources
 
 -
   title: Conclusion &amp; Sources

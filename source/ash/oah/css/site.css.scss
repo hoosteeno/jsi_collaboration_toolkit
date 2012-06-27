@@ -435,31 +435,29 @@ dd {
 
 // Gloss module (drop class on DIV or DL)
 .gloss {
+  background: $pale-blue;
   width: 30%;
   float: right;
   margin: 0 0 20px 20px;
-  padding: 0;
+  padding: 13px 0 0 0;
   border-right: 3px solid #166E9B;
+  -webkit-border-radius: 0.5em 0 0 0;
+  -moz-border-radius: 0.5em 0 0 0;
+  border-radius: 0.5em 0 0 0;
   dl, dt {
     font-weight: normal;
   }
   dt, h4 {
-    margin: 0 0 1.2em;
+    margin: 0 0 13px;
     padding: 0 13px 0 10px;
     font-size: 22px;
     color: #166E9B;
     text-align: right;
     line-height: 1.3;
-    & + dd, & + p, & + ul {
-      -webkit-border-radius: 0.5em 0 0 0;
-      -moz-border-radius: 0.5em 0 0 0;
-      border-radius: 0.5em 0 0 0;
-    }
   }
   dd, p, ul {
     margin: 0;
     padding: 10px 13px 10px 10px;
-    background: $pale-blue;
     font-size: 14px;
   }
   ul {
@@ -484,10 +482,11 @@ dd {
 }
 
 // color-coded text
-#subsection-1-2-4 ol {
+#subsection-1-2-4 ul {
   margin: 0 3em 1.5em 3em;
   padding: 0;
   li {
+    list-style-type: none;  
     list-style-position: inside;
     margin: 0.7em 0 0;
     font-weight: bold;
