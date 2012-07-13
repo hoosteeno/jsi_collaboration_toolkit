@@ -23,6 +23,7 @@ GEM
     eventmachine (0.12.10)
     execjs (1.2.13)
       multi_json (~> 1.0)
+    fattr (2.2.1)
     ffi (1.0.11)
     fssm (0.2.9)
     guard (1.1.1)
@@ -125,6 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
+  fattr
   map (>= 5.7)
   middleman (>= 2)
   pry

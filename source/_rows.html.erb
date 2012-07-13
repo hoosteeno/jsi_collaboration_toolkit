@@ -1,18 +1,35 @@
 
-                              <% if data.data_for_path rows %>
+<% if node.rows %>
+  <% node.rows.each_with_index do |row, row_index| %>
+    <% 
+      row_index = row_index + 1 
+      row_address = "#{node.address}-#{row_index}"
+    %>    
+    <div class="row-fluid" id="<%= row.address %>">
 
-                                <% data.send(rows).each_with_index do |row, row_index| %>
-                                  <% row_index = row_index + 1 %>    
-                                  <% these_rows = rows + "-" + row_index.to_s %>
-                                  <div class="row-fluid" id="<%= these_rows %>">
+      <% if row.layout %>
+        <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
+      <% else %>
+        <%= partial(:one_col, :locals => { :content => row.content }) %>
+      <% end %>
 
-                                    <% if row.layout %>
-                                      <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
-                                    <% else %>
-                                      <%= partial(:one_col, :locals => { :content => row.content }) %>
-                                    <% end %>
+    </div><!-- eo <%= row_address %> -->
+  <% end %>
 
-                                  </div><!-- eo <%= these_rows %> -->
-                                <% end %>
-
-                              <% end %>
+  <ul class="row-fluid next_prev">
+      <% if node.previous %>
+      <li class="prev-link pull-left">
+        <a href="#<%= node.previous.url %>/" class="btn">
+          &laquo; previous
+        </a>
+      </li>
+      <% end %>
+      <% if node.next %>
+        <li class="next-link pull-right">
+          <a href="#<%= node.next.url %>/" class="btn">
+            next &raquo;
+          </a>
+        </li>
+      <% end %>
+  </ul>
+<% end %>

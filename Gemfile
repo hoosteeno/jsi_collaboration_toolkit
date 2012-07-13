@@ -12,3 +12,5 @@ gem "map", ">= 5.7"
 gem "RedCloth"
 
 gem "pry"
+
+gem "fattr"
