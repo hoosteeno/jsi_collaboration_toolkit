@@ -17,16 +17,16 @@
   <% end %>
 
   <ul class="row-fluid next_prev">
-      <% if node.previous %>
+      <% if node.prev_node %>
       <li class="prev-link pull-left">
-        <a href="#<%= node.previous.url %>/" class="btn">
+        <a href="#<%= node.prev_node.url %>" class="btn">
           &laquo; previous
         </a>
       </li>
       <% end %>
-      <% if node.next %>
+      <% if node.next_node %>
         <li class="next-link pull-right">
-          <a href="#<%= node.next.url %>/" class="btn">
+          <a href="#<%= node.next_node.url %>" class="btn">
             next &raquo;
           </a>
         </li>

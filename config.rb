@@ -1,7 +1,7 @@
 require 'redcloth'
 
 $:.unshift './lib'
-require 'hierarchy.rb'
+load 'hierarchy.rb'
 
 
 
@@ -62,63 +62,7 @@ require 'hierarchy.rb'
 # Methods defined in the helpers block are available in templates
 helpers do
   def get_hierarchy 
-    hierarchy = Hierarchy.new
-
-    data.chapters.each_with_index do |chapter, chapter_index|
-
-      hierarchy.add_chapter do |c| 
-        c.address = chapter_index.to_s #create the unique filesystem and html address for this content
-
-        if data.data_for_path c.address
-          c.rows = data.send(c.address) # get the contents of the file if it exists
-        end
-
-        c.url "chapter-#{c.address}" #set up the url for this content
-        c.title = chapter.title
-        c.icon = chapter.icon
-        c.subtitle = chapter.subtitle
-
-        if chapter.sections
-          chapter.sections.each_with_index do |section, section_index|
-
-            section_index = section_index + 1
-
-            c.add_section do |s| 
-              s.address = "#{chapter_index.to_s}-#{section_index.to_s}" 
-
-              if data.data_for_path s.address
-                s.rows = data.send(s.address) 
-              end
-
-              s.url "section-#{s.address}" 
-              s.title = section.title
-              s.subtitle = section.subtitle
-
-              if section.subsections
-                section.subsections.each_with_index do |subsection, subsection_index|
-                  subsection_index = subsection_index + 1
-
-                  s.add_subsection do |ss| 
-                    ss.address = "#{chapter_index.to_s}-#{section_index.to_s}-#{subsection_index.to_s}" 
-
-                    if data.data_for_path ss.address
-                      ss.rows = data.send(ss.address) 
-                    end
-
-                    ss.url "subsection-#{ss.address}" 
-                    ss.title = subsection.title
-                    ss.subtitle = subsection.subtitle
-
-                  end # add_subsection
-                end # each subsection
-              end # if section.subsections
-            end # add_section
-          end # each section
-        end # if chapter.sections
-      end # add_chapter
-    end # each chapter
-
-    return hierarchy
+    Hierarchy.build(data) 
   end
 
   def custom_or_default_content(thingy)
