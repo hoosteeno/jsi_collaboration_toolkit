@@ -20,7 +20,7 @@ class Hierarchy
   
       fattr :parent
       fattr :children
-      fattr :address
+      fattr :address => 0
       fattr :url
       fattr :title
       fattr :subtitle
@@ -33,12 +33,11 @@ class Hierarchy
       def identifier
         attributes = {
           :address => address,
-          :next => next_node,
-          :prev => prev_node,
+          :next => next_node.address,
+          :prev => prev_node.address,
         }
         "#{ self.class.name }(#{ attributes.inspect })"
       end
-
 
       def inspect(accum = [], depth = 0)
         indent = '  ' * depth
@@ -105,6 +104,16 @@ class Hierarchy
   alias_method :chapters, :children
 
   def parent
+    self 
+  end
+
+  def prev_node
+    # i am the hierarchy. i have no siblings. my children are chapters.
+    self
+  end
+
+  def next_node
+    # i am the hierarchy. i have no siblings. my children are chapters.
     self
   end
 
@@ -115,16 +124,34 @@ class Hierarchy
     alias_method :sections, :children
     alias_method :hierarchy, :parent
 
-    def prev_child 
+    def prev_node
       # i am a chapter. i and my siblings always have children.
-      # if i have a previous sibling,  return the last of my sibling's kids
-      # else, since i'm a chapter, i must be the first. 
+      # my children will know their siblings, and so will not ask me for next sibling 
+      case 
+        # if i have a previous sibling,  return the last of my sibling's kids
+        when parent.children[index - 1]
+          parent.children[index - 1].children.last
+        # else, since i'm a chapter, i must be the first. 
+        # and since my kid is asking, he must be the first.
+        # so there's nowhere to go
+        else
+          parent 
+      end
     end
 
-    def next_child 
+    def next_node
       # i am a chapter. i and my siblings always have children.
-      # if i have a next sibling,  return the first of my sibling's kids
-      # else, since i'm a chapter, i must be the last. 
+      # my children will know their siblings, and so will not ask me for next sibling 
+      case
+        # if i have a next sibling,  return the first of my sibling's kids
+        when parent.children[index + 1]
+          parent.children[index + 1].children.first
+        # else, since i'm a chapter, i must be the last. 
+        # and since my kid is asking, he must be the last 
+        # so there's nowhere to go
+        else
+          parent
+      end
     end
 
     class Section
@@ -134,55 +161,66 @@ class Hierarchy
       alias_method :subsections, :children
       alias_method :chapter, :parent
 
-      def prev_child 
-        # i am a section. i and my siblings always either children, or content.
-        # if i have a previous sibling, 
-          # if my previous sibling has kids, return the last of my sibling's kids
-          # else return my previous sibling 
-      end
-
-      def next_child 
-        # i am a section. i and my siblings always either children, or content.
-        # if i have a next sibling, 
-          # if my next sibling has kids, return the next of my sibling's kids
-          # else return my next sibling 
-      end
-
-      def previous
-        case
-          when first?
-            parent.prev_child
-          else
-            parent.children[index - 1]
+      def prev_node
+        # i am a section. i and my siblings always have either children, or content.
+        # if i have a previous sibling
+        if parent.children[index - 1]
+          case
+            # if my previous sibling has kids, return the last of my sibling's kids
+            when parent.children[index - 1].children.length > 0
+              parent.children[index - 1].children.last
+            # else return my previous sibling 
+            else
+              parent.children[index - 1]
+          end
+        # otherwise, ask my parent to figure out what to do
+        else 
+          parent.prev_node 
         end
       end
 
-      def next
-        case
-          when last?
-            parent.next_child
-          else
-            parent.children[index + 1]
+      def next_node
+        # i am a section. i and my siblings always have either children, or content.
+        # if i have a next sibling 
+        if parent.children[index + 1] 
+          case
+            # if my next sibling has kids, return the first of my sibling's kids
+            when parent.children[index + 1].children.length > 0
+              parent.children[index + 1].children.first
+            # else return my next sibling 
+            else
+              parent.children[index + 1]
+          end
+        # otherwise, ask my parent to figure out what to do 
+        else 
+          parent.next_node 
         end
+        
       end
 
       class SubSection
         include Base
         alias_method :section, :parent
 
-        def previous
+        def prev_node
+          # i am a subsection. i and my siblings never have children, only content
           case
+            # if i am the first one, ask my parent to figure out the previous one
             when first?
-              parent.prev_child
+              parent.prev_node
+            # otherwise, return my previous sibling
             else
               parent.children[index - 1]
           end
         end
 
-        def next
+        def next_node
+          # i am a subsection. i and my siblings never have children, only content
           case
+            # if i am the last one, ask my parent to figure out the next one
             when last?
-              parent.next_child
+              parent.next_node
+            # otherwise, return my next sibling
             else
               parent.children[index + 1]
           end
@@ -213,8 +251,6 @@ def Hierarchy.build(data)
 
         chapter.sections.each_with_index do |section, section_index|
 
-          section_index = section_index + 1
-
           c.add_section do |s| 
             s.address = "#{chapter_index.to_s}-#{section_index.to_s}" 
 
@@ -228,7 +264,6 @@ def Hierarchy.build(data)
 
             if section.subsections
               section.subsections.each_with_index do |subsection, subsection_index|
-                subsection_index = subsection_index + 1
 
                 s.add_subsection do |ss| 
                   ss.address = "#{chapter_index.to_s}-#{section_index.to_s}-#{subsection_index.to_s}" 
@@ -282,7 +317,7 @@ if $0 == __FILE__
     data[key] = YAML.load(IO.read(file))
   end
 
-  Hierarchy.build(data)
+  p Hierarchy.build(data)
 
 end
 
