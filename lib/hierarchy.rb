@@ -20,8 +20,9 @@ class Hierarchy
   
       fattr :parent
       fattr :children
-      fattr :address => 0
+      fattr :address
       fattr :url
+      fattr :target
       fattr :title
       fattr :subtitle
       fattr :icon
@@ -128,14 +129,10 @@ class Hierarchy
       # i am a chapter. i and my siblings always have children.
       # my children will know their siblings, and so will not ask me for next sibling 
       case 
-        # if i have a previous sibling,  return the last of my sibling's kids
-        when parent.children[index - 1]
+        when first? # i'm the first chapter and my first child is asking for the previous one. help.
+          parent
+        else # if i have a previous sibling, return the last of my sibling's kids
           parent.children[index - 1].children.last
-        # else, since i'm a chapter, i must be the first. 
-        # and since my kid is asking, he must be the first.
-        # so there's nowhere to go
-        else
-          parent 
       end
     end
 
@@ -143,14 +140,10 @@ class Hierarchy
       # i am a chapter. i and my siblings always have children.
       # my children will know their siblings, and so will not ask me for next sibling 
       case
-        # if i have a next sibling,  return the first of my sibling's kids
-        when parent.children[index + 1]
-          parent.children[index + 1].children.first
-        # else, since i'm a chapter, i must be the last. 
-        # and since my kid is asking, he must be the last 
-        # so there's nowhere to go
-        else
+        when last? # i'm the last chapter and my last child is asking for the next one. help. 
           parent
+        else # if i have a next sibling, return the first of my sibling's kids
+          parent.children[index + 1].children.first
       end
     end
 
@@ -163,26 +156,23 @@ class Hierarchy
 
       def prev_node
         # i am a section. i and my siblings always have either children, or content.
-        # if i have a previous sibling
-        if parent.children[index - 1]
+        unless first?  # if i have a previous sibling
           case
-            # if my previous sibling has kids, return the last of my sibling's kids
             when parent.children[index - 1].children.length > 0
+              # if my previous sibling has kids, return the last of my sibling's kids
               parent.children[index - 1].children.last
-            # else return my previous sibling 
             else
+              # else return my previous sibling 
               parent.children[index - 1]
           end
-        # otherwise, ask my parent to figure out what to do
-        else 
+        else # otherwise, ask my parent to figure out what to do
           parent.prev_node 
         end
       end
 
       def next_node
         # i am a section. i and my siblings always have either children, or content.
-        # if i have a next sibling 
-        if parent.children[index + 1] 
+        unless last?  # if i have a next sibling 
           case
             # if my next sibling has kids, return the first of my sibling's kids
             when parent.children[index + 1].children.length > 0
@@ -191,8 +181,7 @@ class Hierarchy
             else
               parent.children[index + 1]
           end
-        # otherwise, ask my parent to figure out what to do 
-        else 
+        else # otherwise, ask my parent to figure out what to do 
           parent.next_node 
         end
         
@@ -205,11 +194,11 @@ class Hierarchy
         def prev_node
           # i am a subsection. i and my siblings never have children, only content
           case
-            # if i am the first one, ask my parent to figure out the previous one
             when first?
+              # if i am the first one, ask my parent to figure out the previous one
               parent.prev_node
-            # otherwise, return my previous sibling
             else
+              # otherwise, return my previous sibling
               parent.children[index - 1]
           end
         end
@@ -217,11 +206,11 @@ class Hierarchy
         def next_node
           # i am a subsection. i and my siblings never have children, only content
           case
-            # if i am the last one, ask my parent to figure out the next one
             when last?
+              # if i am the last one, ask my parent to figure out the next one
               parent.next_node
-            # otherwise, return my next sibling
             else
+              # otherwise, return my next sibling
               parent.children[index + 1]
           end
         end
@@ -242,7 +231,8 @@ def Hierarchy.build(data)
         c.rows = data.send(c.address) # get the contents of the file if it exists
       end
 
-      c.url "chapter-#{c.address}" #set up the url for this content
+      c.url = "chapter-#{c.address}" #set up the url for this content
+      c.target = "chapter-#{c.address}" #set up the url for this content
       c.title = chapter.title
       c.icon = chapter.icon
       c.subtitle = chapter.subtitle
@@ -258,7 +248,8 @@ def Hierarchy.build(data)
               s.rows = data.send(s.address) 
             end
 
-            s.url "#{c.url}/section-#{s.address}" 
+            s.url = "section-#{s.address}" 
+            s.target = "#{c.target}/#{s.url}"
             s.title = section.title
             s.subtitle = section.subtitle
 
@@ -272,7 +263,8 @@ def Hierarchy.build(data)
                     ss.rows = data.send(ss.address) 
                   end
 
-                  ss.url "#{s.url}/subsection-#{ss.address}" 
+                  ss.url = "subsection-#{ss.address}" 
+                  ss.target = "#{s.target}/#{ss.url}"
                   ss.title = subsection.title
                   ss.subtitle = subsection.subtitle
 

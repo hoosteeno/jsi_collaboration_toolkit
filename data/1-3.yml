@@ -1,0 +1,10 @@
+-
+  layout: one_col
+  content: |
+    h4. Worksheets
+
+    - "Organizational Readiness Assessment (ORA)":downloads/1-4_Organizational_Readiness_Assessment.pdf
+    - "Barriers and Challenges to Partnerships (BCP)":downloads/1-4_Barriers_and_Challenges_to_Partnerships.pdf
+    - "Evaluating Potential Partners Worksheet":downloads/1-4_Evaluating_Potential_Partners.pdf
+    - "Collaborative Practices Inventory (CPI)":downloads/1-4_Collaborative_Practices_Inventory.pdf
+    - "Developing a Partnership Agreement - The Partnership Agreement Development Tool (PAD)":downloads/1-4_Developing_a_Partnership_Agreement-The_Partnership_Agreement_Development_Tool.pdf

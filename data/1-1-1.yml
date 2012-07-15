@@ -1,22 +1,11 @@
 -
-  layout: one_col_with_gloss
-  content:
+  layout: one_col
+  content: |
+    Partnerships may consist of loose associations in which member organizations work for a short time to achieve a specific goal.  In contrast, they can be long-term, and may even become organizations in themselves, with governing bodies, particular community responsibilities, funding, and permanence. Partnerships may draw from a community, a region, a state, or even the nation as a whole.  Regardless of their size and structure, they exist to create and/or support efforts to reach a particular set of goals.   Some common types of partnerships are:
 
-    gloss: |
-      h4(tk-proxima-nova). At a Glance
-
-      This chapter provides information on how to:
-      * Bolster your organization's understanding of the diverse types of partnerships
-      * Identify potential partner organizations, negotiate and build strategic partnerships
-      * Maintain these partnerships in a way that is mutually beneficial to both parties
-
-    main: |
-      Strategic partnerships with other organizations can be vital to the success of your organization's goals and initiatives. Partnerships with other organizations have the potential to concentrate the community's focus on a particular problem, create alliances among organizations that might not normally work together, and keep the community's approach to issues consistent.  Most importantly, partners can advocate for your organization's goals while contributing their own contacts, skills, talents and assets, allowing your organization to broaden its impact while accessing new audiences. 
-
-      Recognizing the importance of partnerships is not difficult, but understanding how to build those partnerships is critical.  Partnerships with other organizations take time and effort, but if managed well, they can help your organization achieve its goals more effectively and with fewer resources.  Remember, when forming partnerships your organization should strive for quality, not quantity.  Not all partnerships result in accrued benefits for your organization or your clients. Partnerships should be formed strategically, based on the value the partnership brings to your organization and your clients.  Working with organizations that do not have a mission or values that complement your own does not typically bring added value to your organization. 
-
-      !(left)/ash/oah/oah-initiatives/images/partnership_1-1.jpg!
-      The "tools and resources":#chapter-1/section-1-5/ provided with this chapter will supply your organization with worksheets, assessment tools, and examples to facilitate your partnership building process. 
-
-      "The case study":#chapter-1/section-1-4/ at the end of the chapter centers on a community based program that seeks to provide training and education to teenage mothers.  It details their the use of the tools in Chapter 1 in forming a strategic partnership to pool resources, developing political clout to push their agenda, and creating long-term community-level change that would lead to a decrease in teenage pregnancy.
-
+    (chunky)*(clearfix) %(big dojofore left)&#58427;% *Community-based* 
+      Look to organizations working alongside you on the front lines of your community. Local nonprofits may find that your values fit well with theirs, even if you are offering different types of services.
+    *(clearfix) %(big dojofore left)&#58401;% *Government-based*  
+      Local governmental institutions may also be an excellent partner organization to explore.  In particular, schools and educational institutions may be excellent partners and provide access to the populations your organization serves. State-wide Departments of Health and Education partnerships are also important because of their data repositories.
+    *(clearfix) %(big dojofore left)&#58413;% *Faith-based* 
+      If their mission aligns with yours, partner with local religious institutions. Places of worship are often regarded as important resources for a community, and have diverse congregations with various skills. 

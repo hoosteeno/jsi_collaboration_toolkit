@@ -2,7 +2,6 @@
 <% if node.rows %>
   <% node.rows.each_with_index do |row, row_index| %>
     <% 
-      row_index = row_index + 1 
       row_address = "#{node.address}-#{row_index}"
     %>    
     <div class="row-fluid" id="<%= row.address %>">
@@ -17,16 +16,16 @@
   <% end %>
 
   <ul class="row-fluid next_prev">
-      <% if node.previous %>
+      <% if node.prev_node.class.name != 'Hierarchy' %>
       <li class="prev-link pull-left">
-        <a href="#<%= node.previous.url %>" class="btn">
+        <a href="#<%= node.prev_node.url %>" target="<%= node.prev_node.target %>" class="btn">
           &laquo; previous
         </a>
       </li>
       <% end %>
-      <% if node.next_node %>
+      <% if node.next_node.class.name != 'Hierarchy' %>
         <li class="next-link pull-right">
-          <a href="#<%= node.next.url %>" class="btn">
+          <a href="#<%= node.next_node.url %>" target="<%= node.next_node.target %>" class="btn">
             next &raquo;
           </a>
         </li>

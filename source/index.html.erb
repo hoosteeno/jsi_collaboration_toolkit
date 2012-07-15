@@ -25,7 +25,7 @@
 
           <ul class="chapter-nav ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
             <% hierarchy.chapters.each do |chapter| %>
-              <li><a href="#<%= chapter.url %>"><%= chapter.title %></a></li>
+              <li><a target="<%= chapter.target %>" href="#<%= chapter.url %>"><%= chapter.title %></a></li>
             <% end %>
           </ul>
 
@@ -40,7 +40,7 @@
 
                 <ul class="section-nav clearfix">
                 <% chapter.sections.each do |section| %>
-                  <li><a href="#<%= section.url %>"><%= section.title %></a></li>
+                  <li><a target="<%= section.target %>" href="#<%= section.url %>"><%= section.title %></a></li>
                 <% end %>
                 </ul>
 
@@ -60,7 +60,7 @@
 
                           <ul>
                           <% section.subsections.each do |subsection| %>
-                            <li><a href="#<%= subsection.url %>"><%= subsection.title %></a></li>
+                            <li><a target="<%= subsection.target %>" href="#<%= subsection.url %>"><%= subsection.title %></a></li>
                           <% end %>
                           </ul>
 
