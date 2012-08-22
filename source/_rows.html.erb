@@ -2,7 +2,7 @@
 <% if node.rows %>
   <% node.rows.each_with_index do |row, row_index| %>
     <% row_address = "#{node.address}-#{row_index}" %>
-    <div class="row-fluid" id="<%= row.address %>">
+    <div class="row-fluid" id="<%= row_address %>">
 
       <% if row.layout %>
         <%= partial(row.layout.to_sym, :locals => { :content => row.content }) %>
@@ -10,7 +10,7 @@
         <%= partial(:one_col, :locals => { :content => row.content }) %>
       <% end %>
 
-    </div><!-- eo <%= row_address %> -->
+    </div><!-- eo #<%= row_address %> -->
   <% end %>
 
   <ul class="row-fluid next_prev">
