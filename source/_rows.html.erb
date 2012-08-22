@@ -1,9 +1,7 @@
 
 <% if node.rows %>
   <% node.rows.each_with_index do |row, row_index| %>
-    <% 
-      row_address = "#{node.address}-#{row_index}"
-    %>    
+    <% row_address = "#{node.address}-#{row_index}" %>
     <div class="row-fluid" id="<%= row.address %>">
 
       <% if row.layout %>

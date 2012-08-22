@@ -36,6 +36,7 @@ class Hierarchy
           :address => address,
           :next => next_node.address,
           :prev => prev_node.address,
+          :rows => rows,
         }
         "#{ self.class.name }(#{ attributes.inspect })"
       end
@@ -222,17 +223,15 @@ end
 def Hierarchy.build(data)
   hierarchy = Hierarchy.new
 
+  # create an accessor for local_data
+  class << data; attr :local_data; end
+
   data.chapters.each_with_index do |chapter, chapter_index|
 
     hierarchy.add_chapter do |c| 
       c.address = chapter_index.to_s #create the unique filesystem and html address for this content
-
-      if data.data_for_path c.address
-        c.rows = data.send(c.address) # get the contents of the file if it exists
-      end
-
       c.url = "chapter-#{c.address}" #set up the url for this content
-      c.target = "chapter-#{c.address}" #set up the url for this content
+      c.target = "chapter-#{c.address}" #set up the target for this content
       c.title = chapter.title
       c.icon = chapter.icon
       c.subtitle = chapter.subtitle
@@ -244,7 +243,7 @@ def Hierarchy.build(data)
           c.add_section do |s| 
             s.address = "#{chapter_index.to_s}-#{section_index.to_s}" 
 
-            if data.data_for_path s.address
+            if data.local_data.has_key?(s.address)
               s.rows = data.send(s.address) 
             end
 
@@ -259,7 +258,7 @@ def Hierarchy.build(data)
                 s.add_subsection do |ss| 
                   ss.address = "#{chapter_index.to_s}-#{section_index.to_s}-#{subsection_index.to_s}" 
 
-                  if data.data_for_path ss.address
+                  if data.local_data.has_key?(ss.address)
                     ss.rows = data.send(ss.address) 
                   end
 
@@ -280,6 +279,7 @@ def Hierarchy.build(data)
   return hierarchy
 end
 
+__END__
 
 if $0 == __FILE__
   require 'yaml'
@@ -314,4 +314,3 @@ if $0 == __FILE__
 end
 
 
-__END__

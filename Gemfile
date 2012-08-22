@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "middleman", ">= 2"
+gem "middleman", ">= 3"
 
 #gem "middleman-livereload"
 
