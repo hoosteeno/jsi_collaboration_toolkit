@@ -36,7 +36,7 @@
                 <span class="dojofore"><%= chapter.icon %></span><strong><%= chapter.title %></strong><% if chapter.subtitle %>: <%= chapter.subtitle %><% end %>
               </h2>
           
-              <div id="sections" class="tabs">
+              <div class="sections tabs">
 
                 <ul class="section-nav clearfix">
                 <% chapter.sections.each do |section| %>
@@ -56,7 +56,7 @@
 
                       <% else %>
 
-                        <div id="subsections" class="tabs">
+                        <div class="subsections tabs">
 
                           <ul>
                           <% section.subsections.each do |subsection| %>
@@ -73,7 +73,7 @@
                             </div><!-- eo #<%= subsection.url %> -->
                           <% end %>
 
-                        </div><!-- eo #subsections -->
+                        </div><!-- eo .subsections -->
 
 
                       <% end %>
@@ -84,7 +84,7 @@
 
                 <% end %>
 
-              </div><!-- eo #sections -->
+              </div><!-- eo .sections -->
             </div><!-- eo #<%= chapter.url %> -->
           <% end %>
         </div><!-- eo #chapters -->

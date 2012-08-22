@@ -160,7 +160,7 @@ img {
     }
   }
 
-  #sections {
+  .sections {
     position: relative;
     .ui-tabs-panel {
       min-height: 400px;
@@ -174,7 +174,7 @@ img {
         .ui-tabs-panel {
           min-height: 0;
           border: none;
-          #subsections {
+          .subsections {
             .ui-tabs-selected a {
               color: black;
             }
@@ -206,7 +206,7 @@ img {
     }
   }
 
-  #subsections {
+  .subsections {
     .ui-tabs-nav {
       margin: 0 0 20px;
       padding: 0;
@@ -238,7 +238,7 @@ img {
   }
 }
 // override subsection nav link styles for ch3.1
-.entry-content #section-3-1 #subsections .ui-tabs-nav {
+.entry-content #section-3-1 .subsections .ui-tabs-nav {
   position: relative;
   margin: 20px 0 40px;
   *zoom: 1;
@@ -351,7 +351,7 @@ img {
   }
 }
 // override spacing of H4 in ch3.1
-.entry-content #section-3-1 #subsections h4 {
+.entry-content #section-3-1 .subsections h4 {
   margin: 0 0 10px;
 }
 // next/previous links
