@@ -40,6 +40,9 @@ jQuery(function(){
         first_tab = child.find('.tab').first();
         jq(tabbish).tabs('select', first_tab.attr('id'));
       });
+
+      // scroll to the top!
+      jq.scrollTo('#chapters', 300);
     }
 
   };
@@ -52,10 +55,8 @@ jQuery(function(){
     go_to_deep_link();
   });
 
-  // scroll to top and change the hash when a nav link or next/prev is clicked
+  // change the hash when a nav link or next/prev is clicked
   jq('.ui-tabs-nav li a, .next_prev a').click(function(){
-    jq.scrollTo('#chapters', 300);
-    console.log('#' + jq(this).attr('target') + '/');
     window.location.hash = '#' + jq(this).attr('target') + '/';
     return false;
   });

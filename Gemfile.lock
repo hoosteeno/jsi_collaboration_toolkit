@@ -117,7 +117,7 @@ DEPENDENCIES
   RedCloth
   fattr
   map (>= 5.7)
-  middleman (>= 2)
+  middleman (>= 3)
   pry
   rb-fsevent
   tagz
