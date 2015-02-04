@@ -10,5 +10,5 @@ middlemanapp + YAML + textile + custom font + custom JS = learning module publis
 1. we've attempted to use relative paths that will make this site easy to integrate with OAH CMS asset locations. these may need adjustment (in CSS, templates, and config file)
 
 ### See it in action ###
-The Office of Adolescent Health hosts [the output of this project](https://github.com/hoosteeno/jsi_collaboration_toolkit).
+The Office of Adolescent Health hosts [the output of this project](www.hhs.gov/ash/oah/resources-and-publications/learning/coll-tk/index.html).
 
